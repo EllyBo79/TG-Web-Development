@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht 3</title>
+</head>
+<body>
+    <style>
+        .hello::after {
+            content: " Elly";
+            color: hotpink;
+        }
+
+        .there::after {
+            content: " there?";
+            color: hotpink;
+        }
+    </style>
+1.::after
+    <p class="hello">Hello</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam deleniti impedit, enim dolore ad labore aut aliquam, quo cumque vel accusantium porro voluptatem numquam veritatis, est obcaecati mollitia blanditiis iusto?</p>
+    <p class="there">Are you</p>
+    <hr>
+2.::backdrop Deze doet het niet
+    <style>
+        video::backdrop {
+        background-color: hotpink;
+        }
+    </style>
+
+    <video width="400" controls>
+    <source src="mov_bbb.mp4" type="video/mp4">
+    </video>
+    <hr>
+3.::before
+    <style>
+        .Elly::before {
+            content: "Hello ";
+            color: orange;
+        }
+        .areYou::before {
+            content: "Are you ";
+            color: orange;
+        }
+    </style>
+    <p class="Elly">Elly!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab quaerat quo rem officiis fugit dicta. Dolore beatae harum fuga, cum, nemo corrupti tempora inventore accusamus officiis sit quas nobis.</p>
+    <p class="areYou">there?</p>
+    <hr>
+    
+4.::cue
+    <style>
+        p::cue(p) {
+            color: white;
+            background-color: hotpink;
+        }
+    </style>
+    <p>This is not black and white</p>
+    <hr>
+5.::cue-region
+    <style>
+        p::cue-region(p) {
+            background-color: pink;
+        }
+    </style>
+
+    <p>This is pink</p>
+    <p>This is also pink</p>
+    <hr>
+6.::first-letter
+    <style>
+        .purple::first-letter {
+            color: purple;
+        }
+    </style>
+
+    <p class="purple">This first letter will be purple</p>
+    <hr>
+7.::first-line
+    <style>
+        .green::first-line {
+            color: green;
+        }
+    </style>
+
+    <p class="green">This first line will be green. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum debitis, quidem ab est molestiae facilis praesentium! Aut a labore accusantium, molestiae deserunt ullam maxime, voluptatem commodi quisquam in laudantium tempore.</p>
+    <hr>
+8.::file-selector-button
+    <style>
+        #myButton::file-selector-button {
+            background-color: hotpink;
+            color: white;
+        }
+    </style>
+
+    <button>
+        <input type="text" name="my Button" id="myButton">
+    </button>
+    <hr>
+9.::grammar-error
+    <!-- werkt niet -->
+    <hr>
+10.::marker
+    <style>
+        ul li::marker {
+            color: aqua;
+        }
+       
+    </style>
+
+    <ul>
+        <li> this</li>   
+        <li>is</li>
+        <li>an</li>
+        <li>example</li>
+    </ul>
+    <hr>
+11.::part (nope)
+    <hr>
+12.::placeholder
+    <style>
+        input::placeholder {
+            color: blue;
+
+        }
+    </style>
+
+    <form action="/action_page.php">
+        <label for="text"></label>
+        <input type="text" placeholder="Elly">
+    </form>
+    <hr>
+13.::selection
+    <style>
+        .selection::selection {
+            background-color: red;
+            color: gold;
+        }
+    </style>
+
+    <p class="selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea autem pariatur eveniet. Quibusdam saepe delectus numquam expedita velit dolores maiores iure molestiae, ducimus fugit natus doloribus iste nihil quam.</p>
+    <hr>
+14.::slotted
+    <style>
+
+    </style>
+    <p>te ingewikkeld voor nu</p>
+    <hr>
+15.::spelling-error
+    <p>werkt niet op browser</p>
+    <hr>
+16.::target-text
+    <p>werkt ook niet in de meeste browsers</p>
+
+
+
+    
+
+
+</body>
+</html>
