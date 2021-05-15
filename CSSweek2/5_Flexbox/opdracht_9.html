@@ -10,55 +10,55 @@
     <style>
         .container {
             background-color: lightgray;
+            width: 1000px
         }
 
         .flex-container {
             display: flex;
             justify-content: flex-start;
-            height: 300px;
+            height: 350px;
             align-items: center;
-            padding: 5px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
             
         }
-        .box1 {
+        .box1, .box2, .box3, .box4 {
             position: relative;
             display: flex;
             flex-direction: column;
-            width: 130px;
+            width: 350px;
             border:1px solid darkgray ;
             margin: 5px;
             text-align: center;
+            background-color: white;
+            font-size: 8px;
             
         }
-        .box2 {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            width: 130px;
-            border:1px solid darkgray ;
-            margin: 5px;
-            text-align: center;
+        
 
+        img {
+            height: 155px;
+            width: 230px;
         }
-        .box3 {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            width: 130px;
-            border:1px solid darkgray ;
-            margin: 5px;
-            text-align: center;
 
+        h2 {
+            color: blue;
+            font-weight: bold;
         }
-        .box4 {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            width: 130px;
-            border:1px solid darkgray ;
-            margin: 5px;
-            text-align: center;
+        p {
+            padding: 2px;
+        }
 
+        button {
+            background-color: blue;
+            color: white;
+            height: 50px;
+            border: none;
+        }
+
+        button:hover{
+            background-color: rgb(42, 231, 42);
+            color: white;
         }
     </style>
 
@@ -66,28 +66,38 @@
     <div class="container">
         <div class="flex-container">
             <div class="box1">
-                <img src="/3_Display...Positioning/fade.jpg" alt="fade">
-                <h1>hjhjh</h1>
-                <p>jkhdjhdjs</p>
-                <button>enter</button>
+                <img src="/CSSweek2/5_Flexbox/images/super-mario-run.gif" alt="run">
+                <h2>Super Mario Run</h2>
+                <p>Een nieuw soort Mario-game, die je met een hand
+                    kunt spelen! Je bestuurt Mario door het scherm aan te 
+                    raken terwijl hij automatisch door het level rent.</p>
+                <button>Play Super Mario Run </button>
             </div>
             <div class="box2">
-                <img src="/3_Display...Positioning/fade.jpg" alt="fade">
-                <h1>hjhjh</h1>
-                <p>jkhdjhdjs</p>
-                <button>enter</button>
+                <img src="/CSSweek2/5_Flexbox/images/mario_maker.gif" alt="fade">
+                <h2>Mario Maker</h2>
+                <p>Steek de handen uit de mouwen en bouw de Super Mario-levels waar je altijd al van hebt gedroomd in Super Mario 
+                    Maker 2, exclusief voor de Nintendo Switch</p>
+                <button>Play Mario Maker</button>
             </div>
             <div class="box3">
-                <img src="/3_Display...Positioning/fade.jpg" alt="fade">
-                <h1>hjhjh</h1>
-                <p>jkhdjhdjs</p>
-                <button>enter</button>
+                <img src="/CSSweek2/5_Flexbox/images/super-mario-3.gif" alt="fade">
+                <h2>Super Mario 3</h2>
+                <p>Super Mario Bros. 3 introduceert een tal van vooruitgangen
+                    t.o.v. het originele Super Mario Bros, zoals de toevoeging
+                    van een wereldmap en meer vijanden.
+                </p>
+                <button>Play Super Mario 3</button>
             </div>
             <div class="box4">
-                <img src="/3_Display...Positioning/fade.jpg" alt="fade">
-                <h1>hjhjh</h1>
-                <p>jkhdjhdjs</p>
-                <button>enter</button>
+                <img src="/CSSweek2/5_Flexbox/images/yoshi.gif" alt="fade">
+                <h2>Yoshi's Island</h2>
+                <p>
+                    Yoshi's island is een spel waar elk level weer iets nieuws
+                    biedt van vijanden tot uitdagingen. Dit houdt het spel door
+                    de hele speeltijd interessant en uitdagend.
+                </p>
+                <button>Play Yoshi's Island</button>
             </div>
         </div>
     </div>
