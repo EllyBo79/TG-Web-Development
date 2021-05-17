@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht 5</title>
+</head>
+<body>
+    <style>
+        .container {
+            display: flex;
+            height: 400px;
+            width: 600px;
+            border: 2px solid black;
+            position: relative;
+        }
+        img {
+            position: relative;
+            height: 180px;
+            width: 180px;  
+            margin: 35px;   
+            transition-duration: 5s;      
+        }
+        .mainBox {
+            display: flex;
+            position: absolute;
+            margin: 20px;
+            height: 200px;
+            width: 200px;
+            border: 8px solid black;
+            transition-property: background-color;
+            transition-duration: 5s;
+            transition-delay: 0.5s;
+
+        }
+        .mainBox:hover {
+            background: rgba(0, 119, 255, 0.356) ;
+        }
+        .moveBox {
+            display: flex;
+            justify-content: flex-start;
+            position: absolute;
+            margin-top: 28px;
+            margin-left: 28px;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(181, 181, 241) ;
+            animation-name: moveBox;
+            
+        }
+        .moveBox:hover {
+            animation: moveBox 5s infinite;
+            transition-timing-function: ease-in;
+            transition-duration: 5s;
+
+        }
+        
+       
+        @keyframes moveBox  {
+    0%   {left:0px; top:0px;}
+    25%   {left:80px; top:150px; 
+            transform: rotate(45deg);} 
+    50% { left: 80px; top: 150px; transform: rotate(45deg);}
+    100% { left:0px; top: 0px;}
+  }
+        
+    </style>
+    <div class="container">
+        <img src="/CSSweek2/6_Transitions/images/a-smurfin (1).jpg" alt="smurfin">
+        <div class="mainBox"></div>        
+        <div class="moveBox"></div>
+    </div>
+</body>
+</html>

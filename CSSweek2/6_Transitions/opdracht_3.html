@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht 3</title>
+</head>
+<body>
+    <style>
+        .container {
+            height: 125px;
+            width: 300px;
+            border: 1px solid black;
+            position: relative;
+
+        }
+        .box1, .box2, .box3, .box4, .box5 {
+            height: 20px;
+            width: 20px;
+            border: 1px solid black;
+            padding: 1px;
+            margin: 1px;
+            background: white;
+            transition-property: transform border-radius background-color ; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-duration: 2s;
+        }
+        .box1 {
+            transition: all 2s ease-in;
+        }
+        .box2 {
+            transition: all s ease-in;
+        }
+        .box3 {
+            transition: all 1s ease-in;
+        }
+        .box4 {
+            transition: all 2s ease-in;
+        }
+        .box5 {
+            transition: all 3s ease-in  ;
+
+
+        }
+
+        .container:hover .box1 {
+            position: relative;
+            background: red;
+            border-radius: 100%;
+            transform: translate(270px);
+            border: 1px solid black;
+        }
+        .container:hover .box2 {
+            position: relative;
+            background: red;
+            transform: translate(270px);
+            border-radius: 20%;
+            transition: all 4s ease-out;
+
+        }
+        .container:hover .box3 {
+            position: relative;
+            background: red;
+            transition-timing-function:  ease-out;
+            transform: translate(270px);
+        }
+        .container:hover .box4 {
+            position: relative;
+            background: red;
+            transition-timing-function:  ease-out;
+            transform: translate(270px);
+        }
+        .container:hover .box5 {
+            position: relative;
+            background: red;
+            transition-timing-function:  linear;
+            transform: translate(270px);
+        }
+       
+            
+        
+    </style>
+    <div class="container">
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+            <div class="box3">3</div>
+            <div class="box4">4</div>
+            <div class="box5">5</div>
+    </div>
+</body>
+</html>
