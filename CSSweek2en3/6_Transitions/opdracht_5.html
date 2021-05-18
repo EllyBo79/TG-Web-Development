@@ -20,26 +20,19 @@
             height: 180px;
             width: 180px;  
             margin: 35px;   
-            transition-duration: 5s;      
         }
         .mainBox {
-            display: flex;
             position: absolute;
             margin: 20px;
             height: 200px;
             width: 200px;
             border: 8px solid black;
-            transition-property: background-color;
-            transition-duration: 5s;
-            transition-delay: 0.5s;
-
         }
-        .mainBox:hover {
-            background: rgba(0, 119, 255, 0.356) ;
+        .mainBox:hover  {
+            background-color: rgba(149, 149, 247, 0.342);
         }
+        
         .moveBox {
-            display: flex;
-            justify-content: flex-start;
             position: absolute;
             margin-top: 28px;
             margin-left: 28px;
@@ -47,14 +40,13 @@
             width: 200px;
             background-color: rgb(181, 181, 241) ;
             animation-name: moveBox;
+            transition: 6s;
+
             
         }
-        .moveBox:hover {
+        .container:hover .moveBox {
             animation: moveBox 5s infinite;
-            transition-timing-function: ease-in;
-            transition-duration: 5s;
-
-        }
+         }
         
        
         @keyframes moveBox  {

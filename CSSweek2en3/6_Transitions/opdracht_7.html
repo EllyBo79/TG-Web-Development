@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht 7</title>
+</head>
+<body>
+    <style>
+        .container {
+            height: 400px;
+            width: 500px;
+            border: 5px solid hotpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+       .box {
+        background-color: hotpink;
+        border: 6px solid aqua;
+        height: 150px;
+        width: 150px;
+        animation: box 3s infinite;
+        transform: rotate(0);
+        opacity: .7;
+    }
+        @keyframes box {
+            0% {
+                transform: rotate(0);
+             }
+            20% {
+                background-color: ghostwhite;
+                border: 3px solid hotpink;
+                border-radius: 50% 0 0 0;
+            }
+            40% {
+                background-color: aqua;
+                border: 3px solid lightseagreen;
+                border-radius: 50% 50% 0 0;
+            }
+            60% {
+                background-color: lightseagreen;
+                border: 3px solid yellow;
+                border-radius: 50% 50% 50% 0;
+            }
+            80% {
+                background-color: yellow;
+                border: 3px solid orange;
+                border-radius: 50% 50% 50% 50%;
+            }
+            
+            
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
