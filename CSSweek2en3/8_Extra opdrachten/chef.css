@@ -1,0 +1,141 @@
+body {
+    position: relative;
+    background-color: rgb(128, 179, 128) ;
+    color:  rgb(97, 135, 216), rgb(128, 179, 128) ;
+    font-family: lobster, cursive;
+    margin: 0;
+}
+@media screen and (min-width: 150px) and (max-width: 1024px) {
+   
+}
+nav {
+    height: 70px;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+  }
+  
+.header {
+    position: relative;
+    display: flex;
+    background-image:url(./images/headerChef.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 400px;
+    color: white;
+    justify-content: flex-end;
+  
+}
+.cooking {
+    font-size: 4rem;
+}
+.para1 {
+    font-size: 20px;
+}
+.wrapper {
+    margin-right: 200px;
+    margin-top: 50px;
+}
+button {
+    background:rgba(0, 0, 0, 0.226);
+    border: 1px solid white;
+    color: white;
+    height: 40px;
+    width: 120px;
+}
+
+.toss {
+    height: 250px;
+    width: 100%;
+}
+
+.plateImg {
+    height: 200px;
+    width: 200px;
+    margin-left: 80px;
+}
+span {
+    margin-left: 250px;
+}
+.middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.plate {
+    padding-left: 70px;
+    padding-right: 30px;
+}
+.pop {
+    text-align: center;
+    font-size: 4rem;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.bottomWrapper {
+    padding-left:50px ;
+    padding-right: 20px;
+}
+
+.menu {
+    font-size: 4rem;
+    text-align: center;
+}
+.pasta {
+    padding-right: 10px;
+}
+.headChef {
+    width: 400px;
+    height: 700px;
+    margin-left: 60px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    background: white;
+    color: rgb(128, 179, 128) ;
+    font-size: 20px;
+}
+.footWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 400px;
+}
+.endNav a {
+    display: block;
+    text-decoration: none;
+    color: rgb(128, 179, 128) ;
+    margin-left: 550px;
+    font-size: 2rem;
+}
+.endNav {
+    padding-bottom: 5px;
+}
+.lastH1 {
+    margin-left: 550px;
+}
+i {
+    padding: 15px;
+}
