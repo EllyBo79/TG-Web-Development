@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extend and inheritance</title>
+</head>
+<body>
+    1. Het verschil tussen een mixin en inheritance is dat je de mixin compleet terug ziet in de code 
+        bij de class en bij inheritance valt dat weer in een nieuwe regel.
+        <br>
+    2. Hieronder een voorbeeld van het gebruik van media query in combinatie met variables.
+    <br>
+    $break-small: 320px;
+    $break-large: 1200px;
+
+    .profile-pic {
+    float: left;
+    width: 250px;
+    @media screen and (max-width: $break-small) {
+        width: 100px;
+        float: none;
+    }
+    @media screen and (min-width: $break-large) {
+        float: right;
+    }
+    }
+</body>
+</html>

@@ -1,15 +1,20 @@
 body {
-    background-color: #ed9f8ac5;
+    background-color: #ed9f8a69;
     font-family: consolas;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
 header {
-    position: absolute;
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
     top: 0;
     left: 0;
 }
 
 nav {
+    display: flex;
     border-bottom: 5px solid #e6e6e6;
     height: 90px;
     text-align: right;
@@ -19,47 +24,57 @@ nav {
 }
 
 a {
-    color: #e6e6e6;
+    color: rgb(89, 134, 109);
     text-decoration: none;
     font-size: 25px;
     position: relative;
     top: 10px;
 }
-.me {
-    position: relative;
-    left: 45%;
-    top: 100px;
-    width: 10%;
-    position: center;
-}
-
 
 .black {
+    display: flex;
     background-color: black;
     color: #e6e6e6;
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 29%;
-    top: 95px;
-    left: 0;
-    border-bottom: 5px solid white;
-    border-top: 5px solid white;
-
+    height: 200px;
+    border-bottom: 5px solid rgb(89, 134, 109);
+    border-top: 5px solid rgb(89, 134, 109);
 }
-
+.list {
+    display: flex;
+    position: relative;
+    top: 40px;
+    right: 20px;
+}
 li {
-    color: lightblue;
+    color: rgb(89, 134, 109);
     font-size: 25px;
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin-left: -20px;
+}
+.bracket {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 25px;
+    color: rgb(248, 216, 156);
+    top: 150px;
+    left: 20px;
+}
+.me {
+    display: flex;
     position: relative;
-    left: 115px;
+    align-items: center;
+    margin-left: 150px;
 }
 
 .elly {
     font-size: 25px;
-    color: salmon;
+    color: rgb(248, 216, 156);
+    margin-left: 20px;
 }
 .about {
     background-color: #e6e6e6;

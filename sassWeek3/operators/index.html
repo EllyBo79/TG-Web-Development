@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    
+    1. .image {
+        height: 400px * 2;
+        width: auto;
+       }
+Verwachte resultaat:
+        .image {
+            height: 800px;
+            width: auto;
+        }
+    2.  .image {
+        height: 400px + 100;
+        width: auto;
+       }
+Verwachte resultaat:
+        .image {
+            height: 500px;
+            width: auto;
+           }
+       
+    3. .image {
+        height: 400px - 300px;
+        width: auto;
+       }
+Verwachte resultaat:
+       .image {
+           height: 100px;
+           width: auto;
+       }
+    4.  
+        .image {
+            height: 200px + 100px - 400px;
+            width: auto;
+        }
+Verwachte resultaat:
+        .image {
+            height-100px;
+            width: auto;
+        }
+    5.
+        .image {
+            height: 200px * 3;
+            width: auto;
+        }
+Verwachte resultaat:
+        .image {
+            height: 600px;
+            width: auto;
+        }
+    6.
+        .image {
+            height: 750px * 1px;
+            width: auto;
+        }
+Verwachte resultaat:
+        syntax is niet goed. Je kan niet met px vermenigvuldigen.
+    7.
+        .image {
+            height: 30px / 5px;
+            width: 24px/ 4;
+        }
+Verwachte resultaat:
+<!-- Berekening staat niet tussen haakjes en je kan niet delen door px.Deze berekening is dus niet juist -->
+        .image {
+            height: 6px;
+            width: 6px;
+            }
+    8.   
+        .image {
+            height: (30px / 5px);
+            width: (24px/ 4);
+        }
+Verwachte resultaat:
+<!-- Doordat het tussen haakjes staat klopt het wel, maar achter de 5 moeten de px weg. Dan klopt het wel. -->
+        .image {
+            height: (30px / 5px);
+            width: (24px/ 4);
+        }
+</body>
+</html>

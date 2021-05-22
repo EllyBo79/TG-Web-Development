@@ -1,0 +1,13 @@
+@mixin Bouma {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 4px solid hotpink;
+    transition-property: background-color border;
+    transition-duration:3s ;
+        &:hover {
+            background-color: olive;
+            border: 4px solid black;
+        }
+    
+}

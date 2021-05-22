@@ -1,0 +1,12 @@
+
+
+.button {
+    height: 50px;
+    width: 200px;
+    color: black;
+    background-color: lightpink;
+    &:hover{
+        background-color: lightyellow;
+        color: grey;
+    }
+}
