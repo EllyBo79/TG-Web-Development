@@ -6,7 +6,9 @@ body, html {
     background-color: black;
     font-family: libre baskerville;    
     height: 100%;
-    margin: 0; 
+    margin-bottom: 20px; 
+    /* cursor:url(https://cdn.custom-cursor.com/db/8473/32/minimal-chilli-pepper-pointer.png), pointer; */
+
 }
 .container {
     background-image: url("/BootstrapWeek3/images/peppers.png");
@@ -16,76 +18,70 @@ body, html {
     background-size: contain;
 }
 div.black {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 10px;
     z-index: 1;
+    background-color: rgba(0, 0, 0, 0.692);
+    margin-left: 300px;
   }
 .black {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     border-bottom: 2px solid #D49f37;
-    width: 600px;
+    width: 700px;
     height: 150px;
     padding-bottom: 20px;
-    margin-left: 300px;
     margin-top: 30px;
     color: #D49f37;
 }
 .black p {
     display: flex;
     position: relative;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-left: 10px;
     font-size: 30px;
     font-weight: 800;
-    margin-left: 10px;
 }
-
-ul {
-    position: absolute;
-    list-style-type: none;
-    margin-top: 310px;
-    padding: 0;
-    width: 250px;
-  } 
-  
-  li a {
-    position: relative;
-    display: block;
+.black a {
+    font-size: 50px;
+    padding: 10px;
     color: #D49f37;
     text-decoration: none;
-    margin-top: 15px;
-    margin-left: 10px;
-    font-size: 25px;
-    transition: font-size;
-  }
-  li a:hover {
-    color: #D49f37;
-    font-size: 35px;
-    transition-duration: 1000ms;
-  }
+    margin-top: 85px;
+}
+
 
   .boxes {
-    display: flex;
-    margin-top: 80px;
-    position: absolute;
-    justify-content: space-between;
-    margin-left: 350px;
-    transition: background-colour border;
+    margin-top: 350px;
+    position: relative;
+    margin-left: 390px;
+    transition: background-colour border;  
 }
 
 .about {
     display: flex;
     justify-content: center;
+    text-align: center;
     background-color:black;
     position: relative;
     width: 500px;
     height: 300px;
     border: 5px solid #D49f37;
     color: #dfa83aa6;
+    margin-bottom: 75px;
+    padding-top: 10px;
+}
+
+.boxP {
+    position: absolute;
+    margin-top: 50px;
+    padding: 20px 20px;
 }
 
 .about:hover {
-    background-color: #d4a0372c;
+    background-color: #251b077e;
     color: #D49f37;
     border: 9px solid #c7a869;
     transition-duration: 1s ;
@@ -94,17 +90,18 @@ ul {
 .skills {
     display: flex;
     justify-content: center;
+    text-align: center;
     background-color:black;
-    position: absolute;
-    margin-top: 350px;
+    position: relative;
     width: 500px;
     height: 300px;
     border: 5px solid #D49f37;
     color: #dfa83aa6;
-
+    margin-bottom: 75px;
+    padding-top: 10px;
 }
 .skills:hover {
-    background-color: #d4a0372c;
+    background-color: #251b077e;
     color: #D49f37;
     border: 9px solid #c7a869;
     transition-duration: 1s ;
@@ -113,27 +110,100 @@ ul {
 .cv {
     display: flex;
     justify-content: center;
+    text-align: center;
     background-color:black;
-    position: absolute;
-    margin-top: 700px;
+    position: relative;
     width: 500px;
     height: 300px;
     border: 5px solid #D49f37;
     color: #dfa83aa6;
-
+    padding-top: 10px;
 }
 .cv:hover {
-    background-color: #d4a0372c;
+    background-color: #251b077e;
     color: #D49f37;
     border: 9px solid #c7a869;
     transition-duration: 1s ;
 }
-.next {
+
+.list {
     position: relative;
-    height: 500px;
-    width: 500px;
-    border: 1px solid white;
+    width: 1000px;
+    height: 600px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: -40px;
+    color: #D49f37;
 }
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 15px;
+    margin-left: 50px;
+  } 
+  
+  li a {
+    position: relative;
+    color: #D49f37;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 50px;
+    transition: font-size;
+    padding: 30px;
+  }
+  li a:hover {
+    color: #D49f37;
+    font-size: 60px;
+    transition-duration: 1000ms;
+  }
+  .goldLine {
+    background-image: url(/HTML/images/gold.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 800px;
+    width: 100%;
+    position: relative;
+    margin-left: -400px;
+    margin-top: -800px;
+    z-index: -1;
+  }
+  .goldLine2 {
+    background-image: url(/HTML/images/gold.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 800px;
+    width: 100%;
+    position: relative;
+    margin-left: 470px;
+    margin-top: -800px;
+    z-index: -1;
+  }
+  .goldLines {
+      display: flex;
+      position: relative;
+  }
+
+  .foot {
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #D49f37;
+    width: 700px;
+    height: 150px;
+    color: #D49f37;
+    position: relative;
+    bottom: 100px;
+    right: 100px;
+  }
+  .foot a {
+      position: absolute;
+      font-size: 50px;
+      color: #D49f37;
+      margin-top: 80px;
+  }
 
 
 
