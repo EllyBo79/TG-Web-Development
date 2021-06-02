@@ -135,36 +135,91 @@ console.log(varOefening)*/
 //         console.log("Smaller than 3")
 //     }
 
-let month = 13;
-    if (month == 1) {
-    console.log("Januari")
-    }   else if (month == 2) {
-        console.log("February")
-    }    else if (month == 3) {
-        console.log("March")
-    }    else if (month == 4) {
-        console.log("April")
-    }    else if (month == 5) {
-        console.log("May")
-    }    else if (month == 6) {
-        console.log("June")
-    }    else if (month == 7) {
-        console.log("July")
-    }    else if (month == 8) {
-        console.log("August")
-    }    else if (month == 9) {
-        console.log("September")
-    }    else if (month == 10) {
-        console.log("October")
-    }    else if (month == 11) {
-        console.log("November")
-    }    else if (month == 12) {
-        console.log("December")
-    }   else if (month > 12) {
-        console.log("Geen geldige maand")
-    }
-    
+// let month = 13;
+//     if (month == 1) {
+//     console.log("Januari")
+//     }   else if (month == 2) {
+//         console.log("February")
+//     }    else if (month == 3) {
+//         console.log("March")
+//     }    else if (month == 4) {
+//         console.log("April")
+//     }    else if (month == 5) {
+//         console.log("May")
+//     }    else if (month == 6) {
+//         console.log("June")
+//     }    else if (month == 7) {
+//         console.log("July")
+//     }    else if (month == 8) {
+//         console.log("August")
+//     }    else if (month == 9) {
+//         console.log("September")
+//     }    else if (month == 10) {
+//         console.log("October")
+//     }    else if (month == 11) {
+//         console.log("November")
+//     }    else if (month == 12) {
+//         console.log("December")
+//     }   else if (month > 12) {
+//         console.log("Geen geldige maand")
+//     }
+
+// let month = 13;
+
+// switch (month) {
+//     case 1:console.log("Januari")
+//     break;
+//     case 2:console.log("Febuary")
+//     break;
+//     case 3:console.log("March")
+//     break;
+//     case 4:console.log("April")
+//     break;
+//     case 5:console.log("May")
+//     break;
+//     case 6:console.log("June")
+//     break;
+//     case 7:console.log("July")
+//     break;
+//     case 8:console.log("August")
+//     break;
+//     case 9:console.log("September")
+//     break;
+//     case 10:console.log("October")
+//     break;
+//     case 11:console.log("November")
+//     break;
+//     case 12:console.log("December")
+//     break;
+ 
+//     default:
+//         console.log("Geen geldige maand")
+// }
 
 
+// let x = 3;
+// let number = (x <= 4 && x >= 0) ? "2" : "5";
+// console.log(number);
 
 
+// function myButton() {
+//     document.getElementById("hey").innerHTML = "Hello World";
+//   }
+
+//   function myButton() {
+//     console.log ("Hello World");
+//  }
+
+// let variabele = 5
+// function Elly (Bouma) {
+//     console.log(Bouma);
+// }
+// Elly(variabele)
+
+// function Elly (x){
+//     return x * 2;
+// }
+// let result = Elly(3)
+// console.log(result)
+
+// document.getElementById("moi").innerHTML = Elly(5);
