@@ -25,10 +25,11 @@ console.log(varOefening);
 
 var varOefening = "Var Text Drie";
 console.log(varOefening)*/
+// ---------------------------------------------------------------------
 
 // let typeQuestion = function calculateSomething() {}
 // console.log("This is a  " + typeof typeQuestion + ", with the value: " + typeQuestion)
-
+// --------------------------------------------------------------------------------------
 // let someNumber = 5;
 // let anotherNumber = "5";
 // console.log(someNumber + anotherNumber)
@@ -49,7 +50,7 @@ console.log(varOefening)*/
 // let someNumber = 5;
 // let anotherNumber = 5;
 // console.log(someNumber !== anotherNumber)
-
+// -------------------------------------------------------------------------
 // let increment = 1;
 // console.log(increment++)
 // console.log(++increment)
@@ -63,6 +64,7 @@ console.log(varOefening)*/
 // console.log(! someNumber)
 // let someNumber = undefined ;
 // console.log(!someNumber)
+// ------------------------------------------------------------------------
 
 // let operator = ("Hello");
 // let operator2 = (" Elly");
@@ -92,7 +94,7 @@ console.log(varOefening)*/
 
 // let someKittens = "Die nieuwe kittens zijn zo schattig!";
 // console.log(someKittens.split(" "));
-
+// -----------------------------------------------------------------------------
 // let x = 4;
 // let y = 8;
 //     if (x==4 && y==8) {
@@ -123,7 +125,7 @@ console.log(varOefening)*/
 //         }           else if (x < 35 || x > 40 && x < 45) {
 //             console.log("The number is lower than 35  or between 40 and 45")
 //         }
-
+// --------------------------------------------------------------------------------------------
 // let x = 20;
 //     if (x == 3) {
 //         console.log("Yes! Equal to 3!")
@@ -200,7 +202,7 @@ console.log(varOefening)*/
 // let x = 3;
 // let number = (x <= 4 && x >= 0) ? "2" : "5";
 // console.log(number);
-
+// ------------------------------------------------------
 
 // function myButton() {
 //     document.getElementById("hey").innerHTML = "Hello World";
@@ -210,11 +212,14 @@ console.log(varOefening)*/
 //     console.log ("Hello World");
 //  }
 
-// let variabele = 5
-// function Elly (Bouma) {
-//     console.log(Bouma);
-// }
-// Elly(variabele)
+// function changeName() {
+//     let showMe = document.getElementById('showMe').value = "Kermit";
+//   }
+
+//  function myFunction() {
+//     let x = document.getElementById("myInput").value;
+//     document.getElementById("demo").innerHTML = "You wrote: " + x;
+//   }
 
 // function Elly (x){
 //     return x * 2;
@@ -223,3 +228,75 @@ console.log(varOefening)*/
 // console.log(result)
 
 // document.getElementById("moi").innerHTML = Elly(5);
+// -----------------------------------------------------------------
+// 1.
+// function myFunction() {
+//     var x = document.getElementsByClassName("nummerEen");
+//     x[0].innerHTML = "Ja ja Het is gelukt!";
+//   }
+2.
+// function myFunction() {
+//     let tagName = document.getElementsByTagName("LI");
+//     document.getElementById("demo").innerHTML = tagName[1].innerHTML;
+//   }
+3.
+// function myFunction() {
+//     document.querySelector(".query").style.backgroundColor = "lightgreen";
+//   }
+
+// 4.
+// function myFunction() {
+//     let x, i;
+//     x = document.querySelectorAll(".selectorAll");
+//     for (i = 0; i < x.length; i++){
+//     x[i].style.backgroundColor = "hotpink";
+//     }
+//   }
+
+// 5.
+// function myFunction() {
+//     document.getElementById("innerHTML").innerHTML = "Jaaaaaaa! Het is me gelukt!!!!";
+//   }
+
+// 6.
+// function myFunction() {
+//     let x = document.getElementById("innerText").innerText;
+//     document.getElementById("Hier").innerHTML = x;  
+//   }
+
+// function myFunction() {
+//     let x = document.getElementById("myInput").value;
+//     document.getElementById("demo").innerHTML = "Dit is wat je aan het schrijven bent. Het komt gelijk in beeld: " + x;
+//   }
+// ---------------------------------------------------------------------------------------
+// function randomNumber() {
+//     return Math.random();
+//   }
+//   console.log(randomNumber());
+
+
+// function randomNumber(x) {
+//         return Math.random();
+//        }
+//       console.log(Math.floor(Math.random() * 10));
+    
+
+// function myFunction() {
+//     document.getElementById("demo").innerHTML = Math.min(5, 10);
+//   }
+
+//   function myFunction() {
+//     document.getElementById("demo").innerHTML = Math.max(5, 10);
+//   }
+// ------------------------------------------------------------------------
+// let names = Adrienn;
+// function (names); 
+//  if (names == Adrienn || Patrick || Maher);
+//  console.log("Yes, This is one of my teammembers")
+
+function myFunction(p1, p2) {
+    return p1 * p2;
+  }
+  document.getElementById("demo").innerHTML = myFunction(4, 3);
+
+
