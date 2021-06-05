@@ -360,16 +360,45 @@ console.log(varOefening)*/
 //     console.log(item)
 
 // C)
- let fruit = ["appel", "aardbei", "banaan", "kers", "mango"]
-    console.log(fruit[0])
-    console.log(fruit[1])
+//  let fruit = ["appel", "aardbei", "banaan", "kers", "mango"]
+//     console.log(fruit[0])
+//     console.log(fruit[1])
 
 // D)
 
-function array (nummers)
-{
- return nummers[Math.floor(Math.random()*nummers.length)]  
- }
- let nummers = [0,1,2,3,4,5,6,7,8,9,10];
- console.log(array(nummers));
+// let array = [0,1,2,3,4,5,6,7,8,9,10]
+// let random = array[Math.floor(Math.random()*array.length)];
 
+// if (random == 0){
+//     console.log("appel");
+// }   else if (random == 1){
+//         console.log("aardbei")
+// }   else if (random == 2){
+//     console.log("banaan")
+// }   else if (random == 3){
+//     console.log("kers")
+// }   else if (random == 4){
+//     console.log("mango")
+// }   else {
+//             console.log(random)
+//          }
+//  document.body.innerHTML = random;
+ 
+// E) 
+// let fruit = ["appel", "aardbei", "banaan", "kers", "mango"]
+//  console.log(fruit.length)
+
+//  G)
+ 
+        // let fruit = ["appel", "aardbei", "banaan", "kers", "mango"]
+        //  let random = fruit[Math.floor(Math.random()*fruit.length)];
+        //  if(random == "appel") {
+        //      console.log("peer")
+        //  } else {
+        //  console.log(random)
+        // }
+
+// H)
+// let fruit = ["appel", "aardbei", "banaan", "kers", "mango"]
+// fruit.sort();
+// console.log(fruit)
