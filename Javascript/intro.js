@@ -166,7 +166,7 @@ console.log(varOefening)*/
 //         console.log("Geen geldige maand")
 //     }
 
-// let month = 13;
+// let month = 5;
 
 // switch (month) {
 //     case 1:console.log("Januari")
@@ -289,14 +289,87 @@ console.log(varOefening)*/
 //     document.getElementById("demo").innerHTML = Math.max(5, 10);
 //   }
 // ------------------------------------------------------------------------
-// let names = Adrienn;
-// function (names); 
-//  if (names == Adrienn || Patrick || Maher);
-//  console.log("Yes, This is one of my teammembers")
 
-function myFunction(p1, p2) {
-    return p1 * p2;
-  }
-  document.getElementById("demo").innerHTML = myFunction(4, 3);
 
+// function name(team) {
+//  if (team == "Adrienn"){
+//  console.log("Yes, This is Adrienn")
+// }    else if ( team == "Patrick"){
+//         console.log("It's Patrick")
+//     }   else if(team == "Maher"){
+//         console.log("Maher in the house!");
+//     }   else if (team =="Elly"){
+//         console.log("Yeah! This is my team")
+//     }       else {
+//                 console.log("No, not in my team")                 
+//          }   
+//         }
+       
+
+//     function team(para) {
+//         document.getElementById("").innerHTML = team(para);
+//       }
+//       name("Adrienn")
+
+
+// *with arrow functions
+
+//     naam = (team) => {
+//     if (team == "Adrienn"){
+//     console.log("Yes, This is Adrienn")
+//    }    else if ( team == "Patrick"){
+//            console.log("It's Patrick")
+//        }   else if(team == "Maher"){
+//            console.log("Maher in the house!");
+//        }   else if (team =="Elly"){
+//            console.log("Yeah! This is my team")
+//        }       else {
+//                    console.log("No, not in my team")                 
+//             }   
+//            }
+             
+//              team = (para) => {
+//            document.getElementById("").innerHTML = team(para);
+//          }
+//          naam("Adrienn")
+// -------------------------------------------------------------------------------
+
+// *Hier krijg je de woorden van de array te zien.
+// let array = ["Blink", 182]
+// for (const item of array) {
+//     console.log(item)
+// }
+
+
+// *Hier krijg je de hoeveelheid woorden van de array te zien. Getallen dus.
+// let array = ["Blink", 182]
+// for (const index in array) {
+//     console.log(index)
+// }
+// ------------------------------------------------------------
+
+// Hoofdstuk 5.1
+
+// A)// let array = [0,1,2,3,4,5,6,7,8,9,10]
+// for (const index in array) {
+//     console.log(index)
+// }
+
+// B)// let fruit = ["appel", "aardbei", "banaan", "kers", "mango"]
+// for (const item of fruit) 
+//     console.log(item)
+
+// C)
+ let fruit = ["appel", "aardbei", "banaan", "kers", "mango"]
+    console.log(fruit[0])
+    console.log(fruit[1])
+
+// D)
+
+function array (nummers)
+{
+ return nummers[Math.floor(Math.random()*nummers.length)]  
+ }
+ let nummers = [0,1,2,3,4,5,6,7,8,9,10];
+ console.log(array(nummers));
 
