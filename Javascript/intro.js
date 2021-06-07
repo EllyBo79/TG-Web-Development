@@ -1,3 +1,5 @@
+// Opdracht 1.1
+
 /*let letOefening = "Let text"
 let letOefening = "Let text Twee!"
 
@@ -26,10 +28,13 @@ console.log(varOefening);
 var varOefening = "Var Text Drie";
 console.log(varOefening)*/
 // ---------------------------------------------------------------------
+        // Opdracht 1.2
 
 // let typeQuestion = function calculateSomething() {}
 // console.log("This is a  " + typeof typeQuestion + ", with the value: " + typeQuestion)
 // --------------------------------------------------------------------------------------
+        // Opdracht 1.3
+
 // let someNumber = 5;
 // let anotherNumber = "5";
 // console.log(someNumber + anotherNumber)
@@ -51,6 +56,8 @@ console.log(varOefening)*/
 // let anotherNumber = 5;
 // console.log(someNumber !== anotherNumber)
 // -------------------------------------------------------------------------
+        // Opdracht 1.4
+
 // let increment = 1;
 // console.log(increment++)
 // console.log(++increment)
@@ -65,6 +72,7 @@ console.log(varOefening)*/
 // let someNumber = undefined ;
 // console.log(!someNumber)
 // ------------------------------------------------------------------------
+        // Opdracht 2.1
 
 // let operator = ("Hello");
 // let operator2 = (" Elly");
@@ -85,6 +93,8 @@ console.log(varOefening)*/
 
 // console.log(kittens.charAt(5))
 
+        // Opdracht 2.2
+
 // let ellyBo="Elly is super Web Developer!";
 // console.log(ellyBo.substring(0, -8));
 
@@ -92,9 +102,13 @@ console.log(varOefening)*/
 // console.log(ellyBo.slice(0, -8));
 // *Output hier is : Elly is een super Web De
 
+        // Opdracht 2.3
+
 // let someKittens = "Die nieuwe kittens zijn zo schattig!";
 // console.log(someKittens.split(" "));
 // -----------------------------------------------------------------------------
+
+        // Opdracht 3.1
 // let x = 4;
 // let y = 8;
 //     if (x==4 && y==8) {
@@ -126,6 +140,9 @@ console.log(varOefening)*/
 //             console.log("The number is lower than 35  or between 40 and 45")
 //         }
 // --------------------------------------------------------------------------------------------
+
+        // Opdracht 3.2
+
 // let x = 20;
 //     if (x == 3) {
 //         console.log("Yes! Equal to 3!")
@@ -203,6 +220,7 @@ console.log(varOefening)*/
 // let number = (x <= 4 && x >= 0) ? "2" : "5";
 // console.log(number);
 // ------------------------------------------------------
+        // Opdracht 4.1
 
 // function myButton() {
 //     document.getElementById("hey").innerHTML = "Hello World";
@@ -229,6 +247,8 @@ console.log(varOefening)*/
 
 // document.getElementById("moi").innerHTML = Elly(5);
 // -----------------------------------------------------------------
+        // Opdracht 4.2
+
 // 1.
 // function myFunction() {
 //     var x = document.getElementsByClassName("nummerEen");
@@ -269,6 +289,9 @@ console.log(varOefening)*/
 //     document.getElementById("demo").innerHTML = "Dit is wat je aan het schrijven bent. Het komt gelijk in beeld: " + x;
 //   }
 // ---------------------------------------------------------------------------------------
+
+        // Opdracht 4.3
+
 // function randomNumber() {
 //     return Math.random();
 //   }
@@ -289,7 +312,7 @@ console.log(varOefening)*/
 //     document.getElementById("demo").innerHTML = Math.max(5, 10);
 //   }
 // ------------------------------------------------------------------------
-
+        // Opdracht 4.4
 
 // function name(team) {
 //  if (team == "Adrienn"){
@@ -333,6 +356,7 @@ console.log(varOefening)*/
 //          }
 //          naam("Adrienn")
 // -------------------------------------------------------------------------------
+        // Oefenen
 
 // *Hier krijg je de woorden van de array te zien.
 // let array = ["Blink", 182]
@@ -390,8 +414,8 @@ console.log(varOefening)*/
 
 //  G)
  
-        // let fruit = ["appel", "aardbei", "banaan", "kers", "mango"]
-        //  let random = fruit[Math.floor(Math.random()*fruit.length)];
+        // let fruit = ["appel", "aardbei", "banaan", "kers", "mango"];
+        // let random = fruit[Math.floor(Math.random()*fruit.length)];
         //  if(random == "appel") {
         //      console.log("peer")
         //  } else {
@@ -399,6 +423,105 @@ console.log(varOefening)*/
         // }
 
 // H)
-// let fruit = ["appel", "aardbei", "banaan", "kers", "mango"]
-// fruit.sort();
+// let fruit = ["peer", "aardbei", "banaan", "kers", "mango"]
+// fruit[1] = [fruit[0],fruit[0]=fruit[1]][0]    
 // console.log(fruit)
+// ---------------------------------------------------------------
+
+        // Opdracht 5.2
+// A)
+// const dutchSports = ["voetbal", "hockey","schaatsen"]
+// console.log(dutchSports[0])
+
+// const dutchSports = ["voetbal", "hockey","schaatsen"]
+// console.log(dutchSports[1])
+
+// const dutchSports = ["voetbal", "hockey","schaatsen"]
+// console.log(dutchSports[2])
+
+// B)
+// let dutchSports = ["voetbal", "hockey","schaatsen"];
+// for (let i = 0; i < dutchSports.length; i++) {
+//         console.log(dutchSports[i]);
+//      }*Dit was eigenlijk niet de opdracht, maar gaf wel het gewenste resultaat
+
+// let dutchSports = ["voetbal", "hockey","schaatsen"];
+// for (let element in dutchSports) {
+//         console.log(element);
+//       }  *Hier ktijg je het aantal van de array te zien
+
+// let dutchSports = ["voetbal", "hockey","schaatsen"];
+// for (let element of dutchSports) {
+//         console.log(element);
+//       } *Hier krijg je de namen van de array te zien
+
+// C)
+// for (i=0; i<=20; i+=2)
+// console.log(i)
+
+// D) E) F)
+           
+// for (i=0; i<=2; i++){
+//         for (even =0; even<=20; even+=2 ){
+                
+//         console.log( even)           
+// }          
+//         }
+//         for (i=0; i<=2; i++){
+//         for(second=0; second<=10; second++ ){
+//                 console.log(second)
+//         }        
+// }
+//         for (i=0; i<=2; i++){
+//                 for(third=0; third<=30; third+=3 ){
+//                         console.log(third)
+//                 }        
+//         }
+
+// G)
+
+// let fibo = [0,1];
+
+// for (i=0; i<=50; i++){
+
+// som = fibo[i] + fibo[i+1];
+
+// fibo.push(som)
+// }
+// console.log(fibo)
+
+// H)
+// let array =  [2,7,5,10,4,9,3,1,8,6];
+
+// function bubble(yo) {
+//         let blup = yo.length;
+      
+//         for (let i = 0; i < blup ; i++) {
+//           for(let j = 0 ; j < blup - i - 1; j++){ 
+//           if (yo[j] > yo[j + 1]) {
+        
+//             let temp = yo[j];
+//             yo[j] = yo[j+1];
+//             yo[j + 1] = temp;
+//           }
+//          }
+//         }
+//         return yo;
+//       }
+//       console.log(bubble(array))
+// -----------------------------------------------------------
+
+        // Opdracht 5.3
+
+const dutchSports = ["Voetbal", "Hockey", "Schaatsen"]
+dutchSports.push("Zeilen", "Zwemmen")
+dutchSports.unshift("Volleybal")
+
+const ballsports = dutchSports.map(x => x * 2);
+console.log(ballsports);
+
+
+// const ballSports = dutchSports;
+// console.log(dutchSports)
+// console.log(ballSports[0], ballSports[1], ballSports[2])
+
