@@ -511,17 +511,162 @@ console.log(varOefening)*/
 //       console.log(bubble(array))
 // -----------------------------------------------------------
 
-        // Opdracht 5.3
+        // Opdracht 5.3   A)  B)  C)  D)  E)  F)  G) 
 
-const dutchSports = ["Voetbal", "Hockey", "Schaatsen"]
-dutchSports.push("Zeilen", "Zwemmen")
-dutchSports.unshift("Volleybal")
-
-const ballsports = dutchSports.map(x => x * 2);
-console.log(ballsports);
+// const dutchSports = ["Voetbal", "Hockey", "Schaatsen"]
+// dutchSports.push("Zeilen", "Zwemmen")
+// dutchSports.unshift("Volleybal")
 
 
-// const ballSports = dutchSports;
-// console.log(dutchSports)
-// console.log(ballSports[0], ballSports[1], ballSports[2])
 
+// let ballSports = dutchSports.slice(0, 3);{
+//      console.log(ballSports);
+// }   
+
+// let ballSports = dutchSports.splice(3, 5);{
+//      console.log(ballSports);
+// }
+
+// let ballSports = dutchSports.sort();{
+//         console.log(ballSports);
+// }
+
+// dutchSports.forEach(item => console.log(item));
+
+// let sportLength = dutchSports.map(function(word) {
+//         return word + " = " + word.length;
+// });
+// console.log(sportLength)
+// ----------------------------------------------------------
+
+        // Opdracht 5.4
+
+// let arrayLike = document.querySelectorAll('div')
+// console.log(arrayLike)
+
+// A)   
+// let divsArr = Array.from(arrayLike); Hier maak je van een node een array.
+
+// B)
+// let developer = ["Javascript", "HTML", "CSS", "Python"];
+
+// let result = developer.filter(word => word.length < 4);
+
+// console.log(result); Hier krijg je alle woorden die kleiner zijn dan 4 letters. Hier dus CSS.
+
+// C)
+// let developer = ["Javascript", "HTML", "CSS", "Python"];
+
+// let found = developer.find(word => word.length > 4);
+
+// console.log(found); Hier Krijg je alleen het 1ste woord wat aan de voorwaarden voldoet.In dit geval dus Javascript.
+
+// D)
+// let developer = [2,4,6,8,10];
+
+// let even = (nummer) => nummer % 2 === 0 ;
+
+// console.log(developer.some(even)); Hier mee krijg je een true of false terug over de vraag of er even getallen in zitten. True in dit geval.
+
+// E)
+// let lagerDan = (waarde) => waarde > 15;
+
+// let developer = [2,4,6,8,10];
+
+// console.log(developer.every(lagerDan)); Hiermee controleer je alle nummer op de gegeven vraag.
+
+// F)
+// let developer = ["Javascript", "HTML", "CSS", "Python"];
+
+// console.log(developer.includes("CSS"))
+// -----------------------------------------------------
+
+                // Opdracht 6.1
+
+                // De Object Constructor:
+
+// let animals = new Object();   
+// animals.name = "Pino"
+// animals.age = "25"
+// animals.country = "Amerika"
+
+// console.log(animals)
+
+// De Literal Constructor:
+
+// let animals = {
+//         name : "Tommy",
+//         age : "28",
+//         country : "Netherlands",
+//         street : "Sesamestreet"
+// }
+// console.log(animals)
+
+// De Function Constructor:
+
+// function animal(name, age, country, street) {
+//         this.name = name
+//         this.age = age
+//         this.country = country
+//         this.street = street
+// }
+// let hoeDan = new animal("Ieniemini", "10", "Netherlands", "Sesamestreet")
+//  console.log(hoeDan)
+
+// De Singleton Constructor:
+
+// let animal = new function() {
+//         this.name = "Koekie monster",
+//         this.age = "niet bekend",
+//         this.country = "Zweden"
+//         this.street = "Sesamestreet"
+// }
+// console.log(animal)
+
+// De Class-based Constructor:
+
+// class Animal {
+//         constructor(name, age,country, street) {
+//                 this.name = "Big Bird"
+//                 this.age = "Forever young"
+//                 this.country = "Paradise"
+//                 this.street = "Sesamestreet"
+//         }
+//         WriteBadCode() {
+//                 console.log("Burn, burn, burn")
+//         }
+// }
+// let classConstructed = new Animal("Elly", "41", "Netherlands", "Amstelveen")
+// console.log(classConstructed)
+
+// A) 
+// De onverwachte property is bij de class based contructor. Hier logt hij alleen de bovenste en niet de onderste nieuwe.
+
+
+
+
+
+
+
+
+
+
+
+
+// function Elly (x){
+//         return x * 2;
+//     }
+//     let result = Elly(3)
+//     console.log(result)
+    
+
+        
+
+
+let sum = 0;
+for(let i = 0; i < 1000 ; i++) { 
+        if(i % 3 == 0 || i % 5 == 0 ){ 
+        sum = sum + i
+  }
+}
+console.log(sum); 
