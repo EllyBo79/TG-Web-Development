@@ -584,7 +584,7 @@ console.log(varOefening)*/
                 // Opdracht 6.1
 
                 // De Object Constructor:
-
+// A)
 // let animals = new Object();   
 // animals.name = "Pino"
 // animals.age = "25"
@@ -592,40 +592,73 @@ console.log(varOefening)*/
 
 // console.log(animals)
 
+// B)
+// let first = Object.create(animals)
+// first.name = "Kermit"
+// first. age = "40"
+// first.country = "V.S."
+// console.log(first)
+
 // De Literal Constructor:
 
-// let animals = {
+
+// A)
+// let animals2 = {
 //         name : "Tommy",
 //         age : "28",
 //         country : "Netherlands",
 //         street : "Sesamestreet"
 // }
-// console.log(animals)
+// console.log(animals2)
+
+// B)
+// let two = Object.create(animals2)
+// two.name = "Kermit"
+// two. age = "40"
+// two.country = "V.S."
+// console.log(two)
+
 
 // De Function Constructor:
-
-// function animal(name, age, country, street) {
+// A)
+// function animal3(name, age, country, street) {
 //         this.name = name
 //         this.age = age
 //         this.country = country
 //         this.street = street
 // }
-// let hoeDan = new animal("Ieniemini", "10", "Netherlands", "Sesamestreet")
+// let hoeDan = new animal3("Ieniemini", "10", "Netherlands", "Sesamestreet")
 //  console.log(hoeDan)
+
+//  B)
+// let third = Object.create(animal3)
+// third.name = "Kermit"
+// third. age = "40"
+// third.country = "V.S."
+// console.log(third)
 
 // De Singleton Constructor:
 
-// let animal = new function() {
+// A)
+// let animal4 = new function() {
 //         this.name = "Koekie monster",
 //         this.age = "niet bekend",
 //         this.country = "Zweden"
 //         this.street = "Sesamestreet"
 // }
-// console.log(animal)
+// console.log(animal4)
+
+// B)
+// let fourth = Object.create(animal4)
+// fourth.name = "Kermit"
+// fourth. age = "40"
+// fourth.country = "V.S."
+// console.log(fourth)
+
 
 // De Class-based Constructor:
-
-// class Animal {
+// A)
+// class animal5 {
 //         constructor(name, age,country, street) {
 //                 this.name = "Big Bird"
 //                 this.age = "Forever young"
@@ -636,37 +669,138 @@ console.log(varOefening)*/
 //                 console.log("Burn, burn, burn")
 //         }
 // }
-// let classConstructed = new Animal("Elly", "41", "Netherlands", "Amstelveen")
+// let classConstructed = new animal5("Elly", "41", "Netherlands", "Amstelveen")
 // console.log(classConstructed)
+
+// B)
+// let fifth = Object.create(animal5)
+// fifth.name = "Kermit"
+// fifth. age = "40"
+// fifth.country = "V.S."
+// console.log(fifth)
+
 
 // A) 
 // De onverwachte property is bij de class based contructor. Hier logt hij alleen de bovenste en niet de onderste nieuwe.
+// B)
+// Weet niet zo goed wat mij nu moet opvallen. Ga dit zo met team bespreken.
+
+// C)
+// let people = [
+//         {
+//                 naam : "Carmen",
+//                 leeftijd : 20},
+
+//         {       naam : "Patrick",
+//                 leeftijd : 15},
+//         {
+//                 naam : "Adrienn",
+//                 leeftijd : 30},
+//         {
+//                 naam : "Maher",
+//                 leeftijd : 10},
+//         {
+//                 naam : "Mandy",
+//                 leeftijd : 50},
+//         {
+//                 naam : "Jens",
+//                 leeftijd : 45},
+//         {
+//                 naam : "Kim Sing",
+//                 leeftijd : 27},
+//         {
+//                 naam : "Tunahan",
+//                 leeftijd : 36},
+//         {
+//                 naam : "Elias",
+//                 leeftijd : 75},
+//         {
+//                 naam : "Frankie",
+//                 leeftijd : 5},
+
+// ]
+
+
+// people.sort(function (a, b) {
+//         return a.leeftijd - b.leeftijd;
+//       });
+//       console.log(people)
+
+// -------------------------------------------------
+        // Opdracht 6.2
+
+let clubOne = {
+        naam :"AFC Sesam",
+        typeClub:"klaverjassen",
+        numberOfMembers : 10,
+               contact:{
+           adres:"Sesamstraat",
+           telefoonnummer:"123456789",
+           contactpersoon:"Pino"
+        }
+}
+console.log(clubOne)
+ 
+let clubTwo = {
+        naam :"Go Ahead Pino",
+        typeClub:"klaverjassen",
+        numberOfMembers : 10,
+               contact:{
+           adres:"Sesamstraat",
+           telefoonnummer:"123456789",
+           contactpersoon:"Pino"
+        }
+}
+let clubThree = {
+        naam :"Bayern Tommy",
+        typeClub:"klaverjassen",
+        numberOfMembers : 10,
+               contact:{
+           adres:"Sesamstraat",
+           telefoonnummer:"123456789",
+           contactpersoon:"Pino"
+        }
+}
+let clubFour  ={
+        naam :"Real Ieniemini",
+        typeClub:"klaverjassen",
+        numberOfMembers : 10,
+               contact:{
+           adres:"Sesamstraat",
+           telefoonnummer:"123456789",
+           contactpersoon:"Pino"
+        }
+}
+let clubFive = {
+        naam :"FC Big Bird",
+        typeClub:"klaverjassen",
+        numberOfMembers : 10,
+               contact:{
+           adres:"Sesamstraat",
+           telefoonnummer:"123456789",
+           contactpersoon:"Pino"
+        }
+}
+
+let allClubs = [clubOne, clubTwo, clubThree, clubFour, clubFive]
+console.log(allClubs)
+
+console.log(clubOne.naam, clubOne.contact.telefoonnummer, clubOne.contact.contactpersoon);
+console.log(clubTwo.naam, clubTwo.contact.telefoonnummer, clubTwo.contact.contactpersoon);
+console.log(clubThree.naam, clubThree.contact.telefoonnummer, clubThree.contact.contactpersoon);
+console.log(clubFour.naam, clubFour.contact.telefoonnummer, clubFour.contact.contactpersoon);
+console.log(clubFive.naam, clubFive.contact.telefoonnummer, clubFive.contact.contactpersoon);
 
 
 
-
-
-
-
-
-
-
-
-
-// function Elly (x){
-//         return x * 2;
-//     }
-//     let result = Elly(3)
-//     console.log(result)
-    
 
         
 
 
-let sum = 0;
-for(let i = 0; i < 1000 ; i++) { 
-        if(i % 3 == 0 || i % 5 == 0 ){ 
-        sum = sum + i
-  }
-}
-console.log(sum); 
+// let sum = 0;
+// for(let i = 0; i < 1000 ; i++) { 
+//         if(i % 3 == 0 || i % 5 == 0 ){ 
+//         sum = sum + i
+//   }
+// }
+// console.log(sum); 
