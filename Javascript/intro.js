@@ -314,26 +314,27 @@ console.log(varOefening)*/
 // ------------------------------------------------------------------------
         // Opdracht 4.4
 
-// function name(team) {
+// function naam(team) {
 //  if (team == "Adrienn"){
-//  console.log("Yes, This is Adrienn")
+//         return "Yes, This is Adrienn";
 // }    else if ( team == "Patrick"){
-//         console.log("It's Patrick")
+//         return "It's Patrick";
 //     }   else if(team == "Maher"){
-//         console.log("Maher in the house!");
+//         return "Maher in the house!";
 //     }   else if (team =="Elly"){
-//         console.log("Yeah! This is my team")
+//         return "Yeah! This is my team";
 //     }       else {
-//                 console.log("No, not in my team")                 
+//                 return "No, not in my team";              
 //          }   
 //         }
-       
+//         console.log(naam("Maher"));
 
-//     function team(para) {
-//         document.getElementById("").innerHTML = team(para);
+//      function teamB (team) {
+//         document.getElementById("demo").innerHTML = naam(team);
 //       }
-//       name("Adrienn")
-
+//       teamB("Maher")
+     
+       
 
 // *with arrow functions
 
@@ -493,7 +494,7 @@ console.log(varOefening)*/
 // H)
 // let array =  [2,7,5,10,4,9,3,1,8,6];
 
-// function bubble(yo) {
+// function bubbleSort(yo) {
 //         let blup = yo.length;
       
 //         for (let i = 0; i < blup ; i++) {
@@ -508,7 +509,7 @@ console.log(varOefening)*/
 //         }
 //         return yo;
 //       }
-//       console.log(bubble(array))
+//       console.log(bubbleSort(array))
 // -----------------------------------------------------------
 
         // Opdracht 5.3   A)  B)  C)  D)  E)  F)  G) 
@@ -729,74 +730,107 @@ console.log(varOefening)*/
 // -------------------------------------------------
         // Opdracht 6.2
 
-let clubOne = {
-        naam :"AFC Sesam",
-        typeClub:"klaverjassen",
-        numberOfMembers : 10,
-               contact:{
-           adres:"Sesamstraat",
-           telefoonnummer:"123456789",
-           contactpersoon:"Pino"
-        }
-}
-console.log(clubOne)
+// let clubOne = {
+//         naam :"AFC Sesam",
+//         typeClub:"klaverjassen",
+//         numberOfMembers : 10,
+//                contact:{
+//            adres:"Sesamstraat",
+//            telefoonnummer:"123456789",
+//            contactpersoon:"Pino"
+//         }
+// }
+// console.log(clubOne)
  
-let clubTwo = {
-        naam :"Go Ahead Pino",
-        typeClub:"klaverjassen",
-        numberOfMembers : 10,
-               contact:{
-           adres:"Sesamstraat",
-           telefoonnummer:"123456789",
-           contactpersoon:"Pino"
-        }
-}
-let clubThree = {
-        naam :"Bayern Tommy",
-        typeClub:"klaverjassen",
-        numberOfMembers : 10,
-               contact:{
-           adres:"Sesamstraat",
-           telefoonnummer:"123456789",
-           contactpersoon:"Pino"
-        }
-}
-let clubFour  ={
-        naam :"Real Ieniemini",
-        typeClub:"klaverjassen",
-        numberOfMembers : 10,
-               contact:{
-           adres:"Sesamstraat",
-           telefoonnummer:"123456789",
-           contactpersoon:"Pino"
-        }
-}
-let clubFive = {
-        naam :"FC Big Bird",
-        typeClub:"klaverjassen",
-        numberOfMembers : 10,
-               contact:{
-           adres:"Sesamstraat",
-           telefoonnummer:"123456789",
-           contactpersoon:"Pino"
-        }
-}
+// let clubTwo = {
+//         naam :"Go Ahead Pino",
+//         typeClub:"klaverjassen",
+//         numberOfMembers : 10,
+//                contact:{
+//            adres:"Sesamstraat",
+//            telefoonnummer:"123456789",
+//            contactpersoon:"Pino"
+//         }
+// }
+// let clubThree = {
+//         naam :"Bayern Tommy",
+//         typeClub:"klaverjassen",
+//         numberOfMembers : 10,
+//                contact:{
+//            adres:"Sesamstraat",
+//            telefoonnummer:"123456789",
+//            contactpersoon:"Pino"
+//         }
+// }
+// let clubFour  ={
+//         naam :"Real Ieniemini",
+//         typeClub:"klaverjassen",
+//         numberOfMembers : 10,
+//                contact:{
+//            adres:"Sesamstraat",
+//            telefoonnummer:"123456789",
+//            contactpersoon:"Pino"
+//         }
+// }
+// let clubFive = {
+//         naam :"FC Big Bird",
+//         typeClub:"klaverjassen",
+//         numberOfMembers : 10,
+//                contact:{
+//            adres:"Sesamstraat",
+//            telefoonnummer:"123456789",
+//            contactpersoon:"Pino"
+//         }
+// }
 
-let allClubs = [clubOne, clubTwo, clubThree, clubFour, clubFive]
-console.log(allClubs)
+// let allClubs = [clubOne, clubTwo, clubThree, clubFour, clubFive]
+// console.log(allClubs)
 
-console.log(clubOne.naam, clubOne.contact.telefoonnummer, clubOne.contact.contactpersoon);
-console.log(clubTwo.naam, clubTwo.contact.telefoonnummer, clubTwo.contact.contactpersoon);
-console.log(clubThree.naam, clubThree.contact.telefoonnummer, clubThree.contact.contactpersoon);
-console.log(clubFour.naam, clubFour.contact.telefoonnummer, clubFour.contact.contactpersoon);
-console.log(clubFive.naam, clubFive.contact.telefoonnummer, clubFive.contact.contactpersoon);
-
-
+// console.log(clubOne.naam, clubOne.contact.telefoonnummer, clubOne.contact.contactpersoon);
+// console.log(clubTwo.naam, clubTwo.contact.telefoonnummer, clubTwo.contact.contactpersoon);
+// console.log(clubThree.naam, clubThree.contact.telefoonnummer, clubThree.contact.contactpersoon);
+// console.log(clubFour.naam, clubFour.contact.telefoonnummer, clubFour.contact.contactpersoon);
+// console.log(clubFive.naam, clubFive.contact.telefoonnummer, clubFive.contact.contactpersoon);
 
 
+
+// let array = [2,7,5,10,4,9,3,1,8,6] 
         
 
 
+
+function naam(team) {
+       
+        if (team == "Adrienn" || team == "Maher" || team == "Carmen" || team == "Patrick" || team == "Elly"){
+               return "Yes, This is the dreamteam!!!"
+        }         else {
+                       return "No, not in my team";              
+                }   
+               }
+
+        //        console.log(naam("Jens"))
+       
+            function teamB (team) {
+               document.getElementById("demo").innerHTML = naam(team);
+             }
+             teamB("Carmen")
+
+        // function naam() {
+        //         var x = document.getElementById("myTeam").value
+        //         document.getElementById("demo").innerHTML 
+        //         if ( x == "Maher" || team == "Carmen" || team == "Patrick" || team == "Elly" ){
+        //         return "joehoe";
+        //       } else  {
+        //               return "no no no";
+        //       }
+        // }
+        
+        //       console.log(naam("Jens"))
+
+
+
+
+// Dinsdag codePairingOpdracht Kim Sing
 // let sum = 0;
 // for(let i = 0; i < 1000 ; i++) { 
 //         if(i % 3 == 0 || i % 5 == 0 ){ 

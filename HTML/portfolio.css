@@ -28,21 +28,18 @@ body, html {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-bottom: 2px solid #D49F37;
-    width: 800px;
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 0px;
     color: #D49F37;
     padding: 0;
 }
-.black p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+.black li {
     font-size: 30px;
     font-weight: 800;
 }
-.black a {
+a {
     display: flex;
     justify-content: center;
     align-items: center;
