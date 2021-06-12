@@ -1,0 +1,48 @@
+body {
+    background-color: bisque;
+    color: hotpink;
+}
+
+.main {
+    background-color: white;
+    height: 500px;
+    width: 400px;
+    border: 5px solid hotpink;
+    margin: 50px auto;
+}
+
+#dis {
+    background-color: bisque;
+    height: 75px;
+    width: 375px;
+    border: 2px solid hotpink;
+    margin: 10px auto;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10px;
+    font-size: xx-large;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    padding-left: 100px;
+}
+
+.butt {    
+    background-color: bisque;
+    height: 50px;
+    width: 50px;
+    margin: 20px ;
+    border: 2px solid hotpink;
+    font-weight: bolder;
+}
+
+.butt:hover {
+    background-color: white;
+}

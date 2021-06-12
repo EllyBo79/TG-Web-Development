@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="main">
+        <p ><input type="text" id="dis" /></p>
+        <tr class="buttons">
+            <td><input class="butt" type="button" value="7" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="8" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="9" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="%" onclick="dis('7')"/></td>
+        </tr>
+        <tr class="buttons">
+            <td><input class="butt" type="button" value="7" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="8" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="9" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="%" onclick="dis('7')"/></td>
+        </tr>
+        <tr class="buttons">
+            <td><input class="butt" type="button" value="7" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="8" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="9" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="%" onclick="dis('7')"/></td>
+        </tr>
+        <tr class="buttons">
+            <td><input class="butt" type="button" value="7" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="8" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="9" onclick="dis('7')"/></td>
+            <td><input class="butt" type="button" value="%" onclick="dis('7')"/></td>
+        </tr>
+    </div>
+<script>
+
+//function that display value
+function screen(val)
+         {
+             document.getElementById("screen").innerText.value+=val
+         }
+           
+         //function that evaluates the digit and return result
+         function solve()
+         {
+             let x = document.getElementById("screen").value
+             let y = eval(x)
+             document.getElementById("screen").value = y
+         }
+           
+         //function that clear the display
+        //  function clr()
+        //  {
+        //      document.getElementById("result").value = ""
+        //  }
+
+          
+   
+      
+    // function myFunction() {
+    //     document.getElementById("screen").innerHTML = 7;
+    // }
+</script>
+</body>
+</html>
