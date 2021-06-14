@@ -1,0 +1,116 @@
+
+.carrousel {
+    position: relative;
+    max-width: 1000px;
+    margin: 50px auto;
+    z-index: 200;
+}
+
+.picOne  {
+    vertical-align: middle;
+    border-radius: 15px 15px 0px 0px;
+    max-width: 625px;
+    animation: slide-in 3s forwards;
+}
+
+.picTwo  {
+    vertical-align: middle;
+    border-radius: 15px 15px 0px 0px;
+    max-width: 625px;
+    animation: slide-in 3s forwards;
+    /* animation-delay: 7s; */
+    z-index: 6;
+}
+
+.picThree  {
+    vertical-align: middle;
+    border-radius: 15px 15px 0px 0px;
+    max-width: 625px;
+    animation: slide-in 3s forwards;
+    z-index: 5;
+    /* animation-delay: 10s; */
+}
+
+.food {
+    position: absolute ;
+    width: 625px;
+    overflow-x: hidden;
+    display: flex;
+    z-index: 7;
+    transform: translateX( 700px );
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+    
+}
+
+
+
+
+.btns {
+    position:absolute;
+    width:50px;
+    height:416px;
+    margin-top:150px;
+    line-height:400px;
+    text-align:center;
+    background:rgba(0, 0, 0, 0.171);
+    z-index:100;
+}
+.btns:hover {
+    background: rgba(0, 0, 0, 0.089);
+}
+
+#next {
+    right:375px; 
+    margin-top: 0px;
+    border-radius: 0px 15px 0px 0px;
+}
+
+
+#previous {    
+    margin-top: 0px; 
+    border-radius: 15px 0px 0px 0px;
+}
+
+#next, #previous:hover {
+    color: rgb(82, 79, 79);
+}
+
+
+
+/* @media only screen and (min-width: 576px) {
+    #next {
+        right: 50px;
+    }
+  } */
+  @media only screen and (max-width: 1074px) {
+    #next {
+        left: 578px;
+    }
+  }
+  
+  @keyframes slide-in {
+    0% {
+      -webkit-transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(0%);
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes opaqTransition {
+    3% { transform: translateX( 0 ); }
+    25% { transform: translateX( 0 ); }
+    28% { transform: translateX( -700px ); }
+    100% { transform: translateX( -700px ); }
+  }
+
+  

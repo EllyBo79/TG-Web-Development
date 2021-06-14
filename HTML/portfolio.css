@@ -3,7 +3,7 @@ body, html {
     background-color: black;
     font-family: libre baskerville;    
     height: 100%;
-    margin-bottom: 20px; 
+    margin: 0 auto; 
     /* cursor:url(https://cdn.custom-cursor.com/db/8473/32/minimal-chilli-pepper-pointer.png), pointer; */
 }
 .container {
@@ -31,24 +31,29 @@ body, html {
     justify-content: center;
     border-bottom: 2px solid #D49F37;
     width: 100%;
-    margin-top: 0px;
+    height: 200px;
     color: #D49F37;
-    padding: 0;
 }
 .black li {
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: 800;
 }
-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    padding: 10px;
-    color: #D49F37;
-    text-decoration: none;
-    margin-top: 25px;
+
+.black ul {
+    margin-top: 50px;
 }
+.black a:hover {
+  color:#e2b761
+}
+a {    
+    font-size: 50px;
+    color: #d49f37;
+    text-decoration: none;
+}
+.fab {
+  margin-top: -40px;
+}
+
   .boxes {
     display: flex;
     justify-content: center;
@@ -137,7 +142,7 @@ ul {
     margin-top: 10px;
     padding: 15px;
   } 
-  li a {
+  .faves {
     color: #D49F37;
     text-decoration: none;
     margin-top: 15px;
@@ -145,7 +150,7 @@ ul {
     transition: font-size;
     padding: 30px;
   }
-  li a:hover {
+  .faves:hover {
     color: #D49F37;
     font-size: 60px;
     transition-duration: 1000ms;
@@ -180,12 +185,14 @@ ul {
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid #D49F37;
-    width: 700px;
+    width: 100%;
     color: #D49F37;
     bottom: 100px;
-    right: 100px;
   }
   .foot a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       font-size: 50px;
       color: #D49F37;
@@ -200,23 +207,19 @@ ul {
 
   
 
-  {box-sizing: border-box}
-  body {font-family: Verdana, sans-serif; margin:0}
-  
-  /* Slideshow container */
-  .slideshow-container {
+    .slideshow-container {
     position: relative;
-    background: #f1f1f1f1;
+    background: black;
   }
   
-  /* Slides */
   .mySlides {
     display: none;
-    padding: 80px;
+    padding: 30px;
     text-align: center;
+    color: #D49F37;
+    font-size: 3vw;
   }
   
-  /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -224,53 +227,100 @@ ul {
     width: auto;
     margin-top: -30px;
     padding: 16px;
-    color: #888;
+    color: #D49F37;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
   .next {
     position: absolute;
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
     color: white;
   }
   
-  /* The dot/bullet/indicator container */
   .dot-container {
       text-align: center;
-      padding: 20px;
-      background: #ddd;
+      padding: 10px;
+      background: black;
+      margin-bottom: 40px;
   }
   
-  /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #D49F37;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   
-  /* Add a background color to the active dot/circle */
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: #cfab6181;
   }
   
-  /* Add an italic font style to all quotes */
   q {font-style: italic;}
   
-  /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
-  </style>
+  .author {color: #e4c27e;}
+
+
+
+
+
+  @media (max-width: 576px) {
+    .black ul {
+      margin-top: 70px;
+    }
+    .black li {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+     }
+     .black a {
+       padding-bottom: 60px;
+       padding-right: 10px;
+     }
+  }
+
+  @media (min-width: 575px) {
+    .black ul {
+      margin-top: 70px;
+    }
+    .black li {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .black a {
+      padding-bottom: 60px;
+    }
+  }
+
+  @media (max-width: 767px){
+    .black a {
+      margin-top: 1px;
+      padding-bottom: 70px;
+      padding-right: 10px;
+    }
+  }
+
+  @media (min-width: 768px){
+    .black ul {
+      margin-top: 70px;
+    }
+    .black a {
+      padding-top: 40px;
+      padding-right: 10px;
+    }
+  }
+  

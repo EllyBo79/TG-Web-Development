@@ -22,11 +22,11 @@
         <li><h1>Elly Bouma</h1></li>
         <li><h2>Junior Front-end Developer</h2></li>
         <li><h2>Junior Scrum Master</h2></li>
-        <li></li>
+        <li><a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/elly-bouma-aa920a99/"></a>
+            <a class="fab fa-github-square" href=""></a></li>
       </ul>
 
-      <a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/elly-bouma-aa920a99/"></a>
-      <a class="fab fa-github-square" href=""></a>
+      
     </div>   
 
     <div class=" boxes">
@@ -41,91 +41,100 @@
                 making other people happy with my food.
               </p>
         </div>
+
+        <div class="slideshow-container">
+
+          <div class="mySlides">
+            <q>"Well, nobody's perfect"</q>
+            <p class="author">Some Like It Hot (1959)</p>
+          </div>
+          
+          <div class="mySlides">
+            <q>"Nobody puts baby in the corner."</q>
+            <p class="author"> Dirty Dancing (1987)</p>
+          </div>
+          
+          <div class="mySlides">
+            <q>"A martini. Shaken, not stirred."</q>
+            <p class="author"> Goldfinger (1964)</p>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
         <div class="skills">
           <H2>My Skills</H2>
           <p class="boxP">
-            HTML, CSS, SASS, Bootstrap, English, Dutch, Communicating, Cooking :heart:
+            HTML, CSS, Javascript, SASS, Bootstrap, English, Dutch, Communicating, Cooking ❤ 
           </p>
         </div>
         <div class="cv ">
-          <h2>Work</h2>
+          <h2>My Projects</h2>
         </div>
 
         <div class="list">
             <h2>Just a few of my favorite things in life.</h2>
           <ul>
-            <li><a href="https://www.thecookierookie.com/10-tacos-and-nachos/"><i class="fas fa-pepper-hot"></i></a></li>
-            <li><a href="https://www.bbcgoodfood.com/recipes/iced-coffee"><i class="fas fa-mug-hot"></i></a></li>
-            <li><a href="/HTML/images/nuggetCool.mp4"><i class="fas fa-dog"></i></a></li>
-            <li><a href="/HTML/images/DjekCool.mp4"><i class="fas fa-cat"></i></a></li>
+            <li><a class="faves" href="https://www.thecookierookie.com/10-tacos-and-nachos/"><i class="fas fa-pepper-hot"></i></a></li>
+            <li><a class="faves" href="https://www.bbcgoodfood.com/recipes/iced-coffee"><i class="fas fa-mug-hot"></i></a></li>
+            <li><a class="faves" href="/HTML/images/nuggetCool.mp4"><i class="fas fa-dog"></i></a></li>
+            <li><a class="faves" href="/HTML/images/DjekCool.mp4"><i class="fas fa-cat"></i></a></li>
           </ul>  
         </div>
         <div class="goldLines">
           <div class="goldLine"></div>
           <div class="goldLine2"></div>
         </div>
+        
+    </div> 
+
+
+
+
+
+   
+
+
+      
         <footer class="foot">
           <a href="mailto:misselly79@gmail.com"><i class="far fa-envelope"></i></a>
         </footer>
-    </div> 
-  </div> 
-
-
-  <div class="slideshow-container">
-
-    <div class="mySlides">
-      <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-      <p class="author">- John Keats</p>
-    </div>
-    
-    <div class="mySlides">
-      <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-      <p class="author">- Ernest Hemingway</p>
-    </div>
-    
-    <div class="mySlides">
-      <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-      <p class="author">- Thomas A. Edison</p>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    
-    <div class="dot-container">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-    
-    <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
+  </div>
 </body>
 </html>
