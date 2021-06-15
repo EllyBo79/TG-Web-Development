@@ -799,21 +799,21 @@ console.log(varOefening)*/
 
 
 
-function naam(team) {
+// function naam(team) {
        
-        if (team == "Adrienn" || team == "Maher" || team == "Carmen" || team == "Patrick" || team == "Elly"){
-               return "Yes, This is the dreamteam!!!"
-        }         else {
-                       return "No, not in my team";              
-                }   
-               }
+//         if (team == "Adrienn" || team == "Maher" || team == "Carmen" || team == "Patrick" || team == "Elly"){
+//                return "Yes, This is the dreamteam!!!"
+//         }         else {
+//                        return "No, not in my team";              
+//                 }   
+//                }
 
-        //        console.log(naam("Jens"))
+//         //        console.log(naam("Jens"))
        
-            function teamB (team) {
-               document.getElementById("demo").innerHTML = naam(team);
-             }
-             teamB("Carmen")
+//             function teamB (team) {
+//                document.getElementById("demo").innerHTML = naam(team);
+//              }
+//              teamB("Carmen")
 
         // function naam() {
         //         var x = document.getElementById("myTeam").value
@@ -838,3 +838,42 @@ function naam(team) {
 //   }
 // }
 // console.log(sum); 
+
+// let fibo = [0,1];
+
+//  for (i=0; i<=50; i+=2){
+//         if (sum < 4000000){
+//                 if(sum % 2 ===0)
+//         } else {
+//                 break
+//         }
+// //     for (i =0; i<=50; i+=2 )
+
+//  som = fibo[i] + fibo[i+1];
+
+//  fibo.push(som)
+// }
+//  console.log(fibo)
+
+ let fib = [0, 1]
+        let sum = 0;
+        while (true) {
+            let i = fib[fib.length - 2] + fib[fib.length - 1]
+            fib.push(i)
+            if (i % 2 === 0) sum += i
+            if (i >= 4000000) break;
+        }
+        console.log(sum)
+        console.log(fib)
+
+
+
+ // let fibo = [0,1];
+
+// for (i=0; i<=50; i++){
+
+// som = fibo[i] + fibo[i+1];
+
+// fibo.push(som)
+// }
+// console.log(fibo)
