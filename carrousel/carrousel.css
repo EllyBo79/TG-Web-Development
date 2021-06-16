@@ -1,38 +1,48 @@
+
 body {
   background-color: pink;
 }
 .container {
   display: flex;
+  position: relative;
 }
-
+#images {
+  transition:  8s ;
+  
+}
 .carrousel {
   display: flex;
-  position: relative;
-  max-width: 1000px;
-  margin: 50px auto; 
+  position: absolute;
+  max-width: 625px;
+  margin-top: 50px;
+  margin-left: 100px;
 }
 
 
 .picOne, .picTwo, .picThree   {
-  vertical-align: middle;
+  position: absolute;
   border-radius: 15px 15px 0px 0px;
   max-width: 625px;
   display: flex;
-  position: relative;
-  
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-
+div.carrousel {
+  background-color: aqua;
+  width: 625px;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 15px;
+}
 .food {
-  position: absolute;
+  position: relative;
   width: 625px;
   display: flex;
-  animation: next 5s;
-  /* z-index: 1;  */
+  animation: next;
 
 }
-
-
 
 
 .btns {
@@ -42,15 +52,16 @@ body {
   margin-top:150px;
   line-height:400px;
   text-align:center;
-  background:rgba(0, 0, 0, 0.171);
+  background:rgba(128, 128, 128, 0.281);
   z-index:100;
 }
 .btns:hover {
-  background: rgba(0, 0, 0, 0.089);
+  background: rgba(128, 128, 128, 0.568);
 }
 
 #next {
-  right:375px; 
+  position: absolute;
+  left:575px; 
   margin-top: 0px;
   border-radius: 0px 15px 0px 0px;
 }
@@ -116,9 +127,23 @@ body {
     }
   }
   
-  @keyframes next {
+  /* @keyframes next {
     from{left:0px}
     to {left: -630px}
+  } */
+  /* @keyframes next {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
   }
 
-  
+   */

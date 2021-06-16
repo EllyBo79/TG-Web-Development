@@ -1,36 +1,74 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+// let Carrousel = 3;
+// showPics(Carrousel);
 
-function nextSlide() {
-    showSlides(slideIndex += 1);
-}
+// function nextSlide() {
+//     showPics(Carrousel += 1);
+// }
 
-function previousSlide() {
-    showSlides(slideIndex -= 1);  
-}
+// function previousSlide() {
+//     showPics(Carrousel -= 1);  
+// }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+// function currentSlide(n) {
+//     showPics(Carrousel = n);
+// }
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("food");
+// function showPics(n) {
+//     let i;
+//     let slides = document.getElementsByClassName("food");
     
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
+//     if (n > slides.length) {
+//       Carrousel = 1
+//     }
+//     if (n < 1) {
+//         Carrousel = slides.length
+//     }
   
-    for (let slide of slides) {
-        slide.style.display = "none";
-    }   
-    slides[slideIndex - 1].style.display = "block"; 
+//     for (let slide of slides) {
+//         slide.style.display = "none";
+//     }   
+//     slides[Carrousel - 1].style.display = "block"; 
+// }
+
+
+
+
+function myFunctionNext() {
+    document.getElementById("images").style.transform = "translateX(-1250px)";
+     
+}
+  
+
+function myFunctionPrev() {
+    document.getElementById("images").style.transform = "translateX(1250px)"; 
 }
 
 
 
+
+// let pictures = [
+//     "images/image1.jpg",
+//     "images/image2.jpg",
+//     "images/image3.jpg"
+// ],
+// curIndex = 0;
+
+// function myFunctionNext() {
+//     document.getElementById('image1').src = pictures[curIndex];
+//     curIndex++;
+//     if (curIndex == pictures.length) { 
+//         curIndex += 2; }
+// }
+// myFunctionNext();
+
+
+
+// function myFunctionPrev() {
+//     document.getElementById('image1').src = pictures[curIndex];
+//     curIndex++;
+//     if (curIndex == pictures.length) { 
+//         curIndex -= 2; }
+// }
+// myFunctionPrev();
 
 
