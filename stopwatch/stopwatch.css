@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background-color: grey;
+    top: 75px;
+    left: 50px;
+}
+
+.greyCircle {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background-color: red;
+
+}
