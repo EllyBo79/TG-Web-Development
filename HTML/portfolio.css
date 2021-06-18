@@ -7,7 +7,7 @@ body, html {
     /* cursor:url(https://cdn.custom-cursor.com/db/8473/32/minimal-chilli-pepper-pointer.png), pointer; */
 }
 .container {
-    background-image: url("/BootstrapWeek3/images/peppers.png");
+    background-image: url("peppers.png");
     height: 100%;  
     background-position: center;
     background-repeat: no-repeat;
@@ -156,7 +156,7 @@ ul {
     transition-duration: 1000ms;
   }
   .goldLine {
-    background-image: url(/HTML/images/gold.png);
+    background-image: url(gold.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 500px;
@@ -167,7 +167,7 @@ ul {
    
   }
   .goldLine2 {
-    background-image: url(/HTML/images/gold.png);
+    background-image: url(gold.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 500px;
