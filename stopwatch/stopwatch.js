@@ -32,15 +32,16 @@ function timerCycle() {
     }
 
     if (sec == 60) {
-      min = min + 1;
       sec = 0;
+      min ++;
     }
-    
-    if (sec == 60) {
-        sec = 0;
+
+    if (min == 60) {
         min++;
       }
 
+
+      //Hier komt er op de display een 0 bij als de klok begint te lopen.
     if (milliesecond < 10 || milliesecond == 0) {
       milliesecond = '0' + milliesecond;
     }
@@ -65,9 +66,12 @@ function resetTimer() {
     milliesecond = 0;
     sec = 0;
 }
+
 //Dit is de pause knop.
 function stopTimer() {
     if (stoptime == false) {
         stoptime = true;
     }
 }
+
+
