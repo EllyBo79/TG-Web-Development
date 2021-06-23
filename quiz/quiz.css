@@ -1,20 +1,25 @@
 body {
     font-family: indie flower;
     font-weight: bolder;
+
 }
-.quizMain {
+#quizMain {
     position: relative;
+    display: block;
     background-color: rgb(21, 129, 124);
-    height: 300px;
+    height: 600px;
     width: 400px;
     text-align: center;
-    padding-top: 10px;
     font-size: 1.2rem;
 }
+h1 {
+    display: flex;
+    margin-left: 80px;
+    }
 
 
 
-.div1 {
+#div1 {
     position: absolute;
     text-align: center;
     height: 100px;
@@ -25,28 +30,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -200px;
+    /* margin-top: 100px; */
     margin-left: 22px;
     font-size: 2.5rem;
 }
-.div2 {
+#div2 {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-    margin-top: -230px;
+    margin-top: -30px;
     margin-left: 175px;
 }
 
-.button1 {
+#button1 {
     font-family: indie flower;
     font-size: 2rem;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -80px;
+    margin-top: 120px;
     background-color: white;
     width: 320px;
     height: 60px;
@@ -54,7 +59,7 @@ body {
     border: 1px solid white;
     border-radius: 50px 0px 0px 50px;
 }
-.button1s {
+#button1s {
     font-family: indie flower;
     font-size: 2rem;
     position: absolute;
@@ -66,17 +71,17 @@ body {
     width: 70px;
     border: 10px solid rgb(21, 129, 124);
     border-radius: 50%;
-    margin-top: -80px;
+    margin-top: 120px;
     margin-left: 35px;
 }
-.button2 {
+#button2 {
     font-family: indie flower;
     font-size: 2rem;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -10px;
+    margin-top: 190px;
     background-color: white;
     width: 320px;
     height: 60px;
@@ -84,7 +89,7 @@ body {
     border: 1px solid white;
     border-radius: 0px 50px 50px 0px;
 }
-.button2s {
+#button2s {
     font-family: indie flower;
     font-size: 2rem;
     position: absolute;
@@ -96,17 +101,17 @@ body {
     width: 70px;
     border: 10px solid rgb(21, 129, 124);
     border-radius: 50%;
-    margin-top: -10px;
+    margin-top: 190px;
     margin-left: 300px;
 }
-.button3 {
+#button3 {
     font-family: indie flower;
     font-size: 2rem;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 260px;
     background-color: white;
     margin-left: 24px;
     border: 1px solid white; 
@@ -115,7 +120,7 @@ body {
     margin-left: 40px;
     border-radius: 50px 0px 0px 50px;
 }
-.button3s {
+#button3s {
     font-family: indie flower;
     font-size: 2rem;
     position: absolute;
@@ -127,18 +132,18 @@ body {
     width: 70px;
     border: 10px solid rgb(21, 129, 124);
     border-radius: 50%;
-    margin-top: 60px;
+    margin-top: 260px;
     margin-left: 35px;
 }
 
-.button4 {
+#button4 {
     font-family: indie flower;
     font-size: 2rem;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 130px;
+    margin-top: 330px;
     background-color: white;
     width: 320px;
     height: 60px;
@@ -146,7 +151,7 @@ body {
     border: 1px solid white;
     border-radius: 0px 50px 50px 0px;
 }
-.button4s {
+#button4s {
     font-family: indie flower;
     font-size: 2rem;
     position: absolute;
@@ -158,24 +163,24 @@ body {
     width: 70px;
     border: 10px solid rgb(21, 129, 124);
     border-radius: 50%;
-    margin-top: 130px;
+    margin-top: 330px;
     margin-left: 300px;
 }
-.button5 {
+#button5 {
     font-family: indie flower;
     font-size: 2rem;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 400px;
     background-color: white;
     border: 1px solid white; 
     width: 320px;
     height: 60px;
     margin-left: 40px;
     border-radius: 50px 0px 0px 50px;}
-.button5s {
+#button5s {
     font-family: indie flower;
     font-size: 2rem;
     position: absolute;
@@ -187,11 +192,11 @@ body {
     width: 70px;
     border: 10px solid rgb(21, 129, 124);
     border-radius: 50%;
-    margin-top: 200px;
+    margin-top: 400px;
     margin-left: 35px;
 }
 
-.vorige {
+#vorige {
     font-family: indie flower;
     font-size: 1.3rem;
     font-weight: bold;
@@ -202,7 +207,7 @@ body {
     height: 40px;
     border: 1px solid rgb(3, 184, 184) ;
 }
-.volgende {
+#volgende {
     font-family: indie flower;
     font-size: 1.3rem;
     font-weight: bold;
@@ -224,5 +229,5 @@ body {
     width: 60px;
     border: 1px solid rgb(3, 184, 184) ;
     text-align: center;
-    margin-top: 800px;
+    margin-top: 100px;
 }

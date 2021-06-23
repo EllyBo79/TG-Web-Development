@@ -855,16 +855,16 @@ console.log(varOefening)*/
 // }
 //  console.log(fibo)
 
- let fib = [0, 1]
-        let sum = 0;
-        while (true) {
-            let i = fib[fib.length - 2] + fib[fib.length - 1]
-            fib.push(i)
-            if (i % 2 === 0) sum += i
-            if (i >= 4000000) break;
-        }
-        console.log(sum)
-        console.log(fib)
+//  let fib = [0, 1]
+//         let sum = 0;
+//         while (true) {
+//             let i = fib[fib.length - 2] + fib[fib.length - 1]
+//             fib.push(i)
+//             if (i % 2 === 0) sum += i
+//             if (i >= 4000000) break;
+//         }
+//         console.log(sum)
+//         console.log(fib)
 
 
 
@@ -877,3 +877,25 @@ console.log(varOefening)*/
 // fibo.push(som)
 // }
 // console.log(fibo)
+
+
+function largestPalindrome(){
+
+        var arr = [];    
+        for(var i =999; i>100; i--){
+            for(var j = 999; j>100; j--){
+                var mul = j*i;
+                if(isPalin(mul)){
+                    arr.push(j * i);
+                }
+            }
+        }
+    
+        return Math.max.apply(Math, arr);
+    }
+    
+    function isPalin(i){
+        return i.toString() == i.toString().split("").reverse().join("");
+    }
+    
+    console.log(largestPalindrome());
