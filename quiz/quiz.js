@@ -1,15 +1,9 @@
 
-
-
-// let quizMain = document.createElement('div');
-// quizMain.textContent = "";
-// quizMain.id= "quizMain";
-// document.body.appendChild(quizMain);
-
 let div1 = document.createElement('div');
 div1.textContent = "what is 21+5?";
 div1.id = "div1";
 quizMain.appendChild(div1);
+
 
 let div2 = document.createElement('div');
 div2.textContent = "1/5";
@@ -31,7 +25,7 @@ quizMain.appendChild(button1s);
 
 
 let button2 = document.createElement('button');
-button2.textContent = "button 2";
+// button2.textContent = "button 2";
 button2.id = "button2";
 quizMain.appendChild(button2);
 
@@ -43,7 +37,7 @@ quizMain.appendChild(button2s);
 
 
 let button3 = document.createElement('button');
-button3.textContent = "button 3";
+// button3.textContent = "button 3";
 button3.id = "button3";
 quizMain.appendChild(button3);
 
@@ -54,7 +48,7 @@ quizMain.appendChild(button3s);
 
 
 let button4 = document.createElement('button');
-button4.textContent = "button 4";
+// button4.textContent = "button 4";
 button4.id = "button4";
 quizMain.appendChild(button4);
 
@@ -66,7 +60,7 @@ quizMain.appendChild(button4s);
 
 
 let button5 = document.createElement('button');
-button5.textContent = "button 5";
+// button5.textContent = "button 5";
 button5.id = "button5";
 quizMain.appendChild(button5);
 
@@ -93,6 +87,7 @@ start.textContent = "Start";
 start.id = "start";
 document.body.appendChild(start);
 
+//startknop waardoor je naar de eerste vraag gaat.
 let targetDiv = document.getElementById("quizMain");
     let btn = document.getElementById("start");
     btn.onclick = function () {
@@ -103,30 +98,109 @@ let targetDiv = document.getElementById("quizMain");
       }
     };
 
-
-    let question1 = 21+5; {
+    // Deze moeten allemaal in 1 function komen. Hoe dan?
+   // Dit is de eerste vraag
+    let answer1 = 26; {
         document.getElementById('button1').onclick = changeColor;   
         function changeColor() {
             button1.style.background = "green";
         }   
-        document.getElementById("button1").innerHTML = 26;       
-
-               
+        document.getElementById("button1").innerHTML = 26;                      
     }
-
+    let answer2 = 20; {
     document.getElementById('button2').onclick = changeColor;   
     function changeColor() {
         button2.style.background = "red";
     }   
     document.getElementById("button2").innerHTML = 20;       
-
+    }
+//  Vraag 1 moet meerdere opties krijgen. Niet meerdere vraagnummers per beeld. Lukt niet hoe ik het wil.
+    let answer3 = 15; {  
     document.getElementById('button3').onclick = changeColor;   
     function changeColor() {
         button3.style.background = "red";
     }   
     document.getElementById("button3").innerHTML = 15;   
+    }
+
+    let answer4 = 34; {  
+        document.getElementById('button4').onclick = changeColor;   
+        function changeColor() {
+            button4.style.background = "red";
+        }   
+        document.getElementById("button4").innerHTML = 34;   
+        }
+
+        let answer5 = 27; {  
+            document.getElementById('button5').onclick = changeColor;   
+            function changeColor() {
+                button5.style.background = "red";
+            }   
+            document.getElementById("button5").innerHTML = 27;   
+            }
+
+           
+
+//misschien functie schrijven, zodat bij eerte onclick alles wit kleurt.
 
 
+
+    let second = document.getElementById("quizMain");
+    let btn2 = document.getElementById("volgende");
+    btn2.onclick = function () {
+        document.getElementById("div1").innerHTML = "10 + 5";
+        
+    
+        let blok1 = 13; {
+            document.getElementById('button1').onclick = changeColor2;   
+            function changeColor2() {
+                button1.style.background = "white";
+                button1.style.background = "red";
+            }   
+            document.getElementById("button1").innerHTML = 13;                      
+        }
+    
+        let blok2 = 14; {
+            document.getElementById('button2').onclick = changeColor2;   
+            function changeColor2() {
+                button2.style.background = "white";
+                button2.style.background = "red";
+            }   
+            document.getElementById("button2").innerHTML = 14;                      
+        }
+
+        
+        let blok3 = 17; {
+            document.getElementById('button3').onclick = changeColor2;   
+            function changeColor2() {
+                button3.style.background = "white";
+                button3.style.background = "red";
+            }   
+            document.getElementById("button3").innerHTML = 17;                      
+        }
+
+       
+        let blok4 = 13; {
+            document.getElementById('button4').onclick = changeColor2;   
+            function changeColor2() {
+                button4.style.background = "white";
+                button4.style.background = "red";
+            }   
+            document.getElementById("button4").innerHTML = 12;                      
+        }
+
+        let blok5 = 15; {
+            document.getElementById('button5').onclick = changeColor2;   
+            function changeColor2() {
+                button5.style.background = "white";
+                button5.style.background = "green";
+            }   
+            document.getElementById("button5").innerHTML = 15;                      
+        }
+        }
+
+    
+    
 
 
 
