@@ -139,22 +139,23 @@ let targetDiv = document.getElementById("quizMain");
             document.getElementById("button5").innerHTML = 27;   
             }
 
-           
-
-//misschien functie schrijven, zodat bij eerte onclick alles wit kleurt.
-
-
+//misschien functie schrijven, zodat bij eerte onclick alles wit kleurt. Gelukt!regel 148-155
 
     let second = document.getElementById("quizMain");
     let btn2 = document.getElementById("volgende");
     btn2.onclick = function () {
         document.getElementById("div1").innerHTML = "10 + 5";
-        
-    
+        document.getElementById("volgende").onclick = changeColor2;   
+            button1.style.background = "white";
+            button2.style.background = "white";
+            button3.style.background = "white";
+            button4.style.background = "white";
+            button5.style.background = "white";
+
+
         let blok1 = 13; {
             document.getElementById('button1').onclick = changeColor2;   
             function changeColor2() {
-                button1.style.background = "white";
                 button1.style.background = "red";
             }   
             document.getElementById("button1").innerHTML = 13;                      
@@ -163,7 +164,6 @@ let targetDiv = document.getElementById("quizMain");
         let blok2 = 14; {
             document.getElementById('button2').onclick = changeColor2;   
             function changeColor2() {
-                button2.style.background = "white";
                 button2.style.background = "red";
             }   
             document.getElementById("button2").innerHTML = 14;                      
@@ -173,7 +173,6 @@ let targetDiv = document.getElementById("quizMain");
         let blok3 = 17; {
             document.getElementById('button3').onclick = changeColor2;   
             function changeColor2() {
-                button3.style.background = "white";
                 button3.style.background = "red";
             }   
             document.getElementById("button3").innerHTML = 17;                      
@@ -183,7 +182,6 @@ let targetDiv = document.getElementById("quizMain");
         let blok4 = 13; {
             document.getElementById('button4').onclick = changeColor2;   
             function changeColor2() {
-                button4.style.background = "white";
                 button4.style.background = "red";
             }   
             document.getElementById("button4").innerHTML = 12;                      
@@ -192,14 +190,70 @@ let targetDiv = document.getElementById("quizMain");
         let blok5 = 15; {
             document.getElementById('button5').onclick = changeColor2;   
             function changeColor2() {
-                button5.style.background = "white";
                 button5.style.background = "green";
             }   
             document.getElementById("button5").innerHTML = 15;                      
-        }
-        }
+        
+        
 
-    
+
+
+        let third = document.getElementById("quizMain");
+        let btn2 = document.getElementById("volgende");
+        btn2.onclick = function () {
+            document.getElementById("div1").innerHTML = "5 + 2";
+            document.getElementById("volgende").onclick = changeColor2;   
+                button1.style.background = "white";
+                button2.style.background = "white";
+                button3.style.background = "white";
+                button4.style.background = "white";
+                button5.style.background = "white";
+
+                let blok1 = 13; {
+                    document.getElementById('button1').onclick = changeColor2;   
+                    function changeColor2() {
+                        button1.style.background = "red";
+                    }   
+                    document.getElementById("button1").innerHTML = 13;                      
+                }
+            
+                let blok2 = 14; {
+                    document.getElementById('button2').onclick = changeColor2;   
+                    function changeColor2() {
+                        button2.style.background = "red";
+                    }   
+                    document.getElementById("button2").innerHTML = 14;                      
+                }
+        
+                
+                let blok3 = 17; {
+                    document.getElementById('button3').onclick = changeColor2;   
+                    function changeColor2() {
+                        button3.style.background = "red";
+                    }   
+                    document.getElementById("button3").innerHTML = 17;                      
+                }
+        
+               
+                let blok4 = 13; {
+                    document.getElementById('button4').onclick = changeColor2;   
+                    function changeColor2() {
+                        button4.style.background = "red";
+                    }   
+                    document.getElementById("button4").innerHTML = 12;                      
+                }
+        
+                let blok5 = 15; {
+                    document.getElementById('button5').onclick = changeColor2;   
+                    function changeColor2() {
+                        button5.style.background = "green";
+                    }   
+                    document.getElementById("button5").innerHTML = 15;                      
+                }
+                }
+            }}
+
+            
     
 
 
