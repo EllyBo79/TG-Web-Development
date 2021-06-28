@@ -13,7 +13,6 @@ quizMain.appendChild(div2);
 
 
 let button1 = document.createElement('button');
-// button1.textContent = "button 1";
 button1.id = "button1";
 quizMain.appendChild(button1);
 
@@ -25,7 +24,6 @@ quizMain.appendChild(button1s);
 
 
 let button2 = document.createElement('button');
-// button2.textContent = "button 2";
 button2.id = "button2";
 quizMain.appendChild(button2);
 
@@ -37,7 +35,6 @@ quizMain.appendChild(button2s);
 
 
 let button3 = document.createElement('button');
-// button3.textContent = "button 3";
 button3.id = "button3";
 quizMain.appendChild(button3);
 
@@ -48,7 +45,6 @@ quizMain.appendChild(button3s);
 
 
 let button4 = document.createElement('button');
-// button4.textContent = "button 4";
 button4.id = "button4";
 quizMain.appendChild(button4);
 
@@ -60,7 +56,6 @@ quizMain.appendChild(button4s);
 
 
 let button5 = document.createElement('button');
-// button5.textContent = "button 5";
 button5.id = "button5";
 quizMain.appendChild(button5);
 
@@ -107,6 +102,7 @@ let targetDiv = document.getElementById("quizMain");
         }   
         document.getElementById("button1").innerHTML = 26;                      
     }
+
     let answer2 = 20; {
     document.getElementById('button2').onclick = changeColor;   
     function changeColor() {
@@ -114,6 +110,7 @@ let targetDiv = document.getElementById("quizMain");
     }   
     document.getElementById("button2").innerHTML = 20;       
     }
+
 //  Vraag 1 moet meerdere opties krijgen. Niet meerdere vraagnummers per beeld. Lukt niet hoe ik het wil.
     let answer3 = 15; {  
     document.getElementById('button3').onclick = changeColor;   
@@ -139,19 +136,24 @@ let targetDiv = document.getElementById("quizMain");
             document.getElementById("button5").innerHTML = 27;   
             }
 
+
 //misschien functie schrijven, zodat bij eerte onclick alles wit kleurt. Gelukt!regel 148-155
 
-    let second = document.getElementById("quizMain");
+    
     let btn2 = document.getElementById("volgende");
     btn2.onclick = function () {
+        document.getElementById("quizMain")
         document.getElementById("div1").innerHTML = "10 + 5";
-        document.getElementById("volgende").onclick = changeColor2;   
+        document.getElementById("volgende").onclick = changeColor2; 
+        div2.textContent = "2/5"; 
+
             button1.style.background = "white";
             button2.style.background = "white";
             button3.style.background = "white";
             button4.style.background = "white";
             button5.style.background = "white";
-
+    }
+    
 
         let blok1 = 13; {
             document.getElementById('button1').onclick = changeColor2;   
@@ -192,46 +194,58 @@ let targetDiv = document.getElementById("quizMain");
             function changeColor2() {
                 button5.style.background = "green";
             }   
-            document.getElementById("button5").innerHTML = 15;                      
+            document.getElementById("button5").innerHTML = 15;  
+
+            let btn3 = document.getElementById("vorige");
+            btn3.onclick = function () {
+                document.getElementById("quizMain");
+                document.getElementById("div1").innerHTML = "21 + 5";
+                div2.textContent = "1/5";                                    
+                    document.getElementById("button1").innerHTML = 26;  
+                    document.getElementById("button2").innerHTML = 20;                      
+                    document.getElementById("button3").innerHTML = 15;                      
+                    document.getElementById("button4").innerHTML = 34;                      
+                    document.getElementById("button5").innerHTML = 27;  
+            }
+                           
         
         
-
-
-
-        let third = document.getElementById("quizMain");
         let btn2 = document.getElementById("volgende");
         btn2.onclick = function () {
+            document.getElementById("quizMain")
             document.getElementById("div1").innerHTML = "5 + 2";
-            document.getElementById("volgende").onclick = changeColor2;   
+            document.getElementById("volgende").onclick = changeColor2;
+                div2.textContent = "3/5";     
                 button1.style.background = "white";
                 button2.style.background = "white";
                 button3.style.background = "white";
                 button4.style.background = "white";
                 button5.style.background = "white";
+        }
 
-                let blok1 = 13; {
+                let blok1 = 12; {
                     document.getElementById('button1').onclick = changeColor2;   
                     function changeColor2() {
                         button1.style.background = "red";
                     }   
-                    document.getElementById("button1").innerHTML = 13;                      
+                    document.getElementById("button1").innerHTML = 12;                      
                 }
             
-                let blok2 = 14; {
+                let blok2 = 7; {
                     document.getElementById('button2').onclick = changeColor2;   
                     function changeColor2() {
-                        button2.style.background = "red";
+                        button2.style.background = "green";
                     }   
-                    document.getElementById("button2").innerHTML = 14;                      
+                    document.getElementById("button2").innerHTML = 7;                      
                 }
         
                 
-                let blok3 = 17; {
+                let blok3 = 8; {
                     document.getElementById('button3').onclick = changeColor2;   
                     function changeColor2() {
                         button3.style.background = "red";
                     }   
-                    document.getElementById("button3").innerHTML = 17;                      
+                    document.getElementById("button3").innerHTML = 8;                      
                 }
         
                
@@ -240,23 +254,187 @@ let targetDiv = document.getElementById("quizMain");
                     function changeColor2() {
                         button4.style.background = "red";
                     }   
-                    document.getElementById("button4").innerHTML = 12;                      
+                    document.getElementById("button4").innerHTML = 13;                      
                 }
         
-                let blok5 = 15; {
+                let blok5 = 6; {
                     document.getElementById('button5').onclick = changeColor2;   
                     function changeColor2() {
-                        button5.style.background = "green";
+                        button5.style.background = "red";
                     }   
-                    document.getElementById("button5").innerHTML = 15;                      
-                }
-                }
-            }}
+                    document.getElementById("button5").innerHTML = 6;  
+                    
 
+                    let btn3 = document.getElementById("vorige");
+                    btn3.onclick = function () {
+                        document.getElementById("quizMain");
+                        document.getElementById("div1").innerHTML = "10 + 5";
+                        div2.textContent = "2/5";                                    
+                            document.getElementById("button1").innerHTML = 13;  
+                            document.getElementById("button2").innerHTML = 14;                      
+                            document.getElementById("button3").innerHTML = 17;                      
+                            document.getElementById("button4").innerHTML = 12;                      
+                            document.getElementById("button5").innerHTML = 15;  
+                    }
+
+
+                    let btn2 = document.getElementById("volgende");
+                    btn2.onclick = function () {
+                        document.getElementById("quizMain")
+                        document.getElementById("div1").innerHTML = "50 + 21";
+                        document.getElementById("volgende").onclick = changeColor2;
+                            div2.textContent = "4/5";     
+                            button1.style.background = "white";
+                            button2.style.background = "white";
+                            button3.style.background = "white";
+                            button4.style.background = "white";
+                            button5.style.background = "white";
+                    }
             
-    
+                            let blok1 = 60; {
+                                document.getElementById('button1').onclick = changeColor2;   
+                                function changeColor2() {
+                                    button1.style.background = "red";
+                                }   
+                                document.getElementById("button1").innerHTML = 60;                      
+                            }
+                        
+                            let blok2 = 72; {
+                                document.getElementById('button2').onclick = changeColor2;   
+                                function changeColor2() {
+                                    button2.style.background = "red";
+                                }   
+                                document.getElementById("button2").innerHTML = 72;                      
+                            }
+                    
+                            
+                            let blok3 = 71; {
+                                document.getElementById('button3').onclick = changeColor2;   
+                                function changeColor2() {
+                                    button3.style.background = "green";
+                                }   
+                                document.getElementById("button3").innerHTML = 71;                      
+                            }
+                    
+                           
+                            let blok4 = 75; {
+                                document.getElementById('button4').onclick = changeColor2;   
+                                function changeColor2() {
+                                    button4.style.background = "red";
+                                }   
+                                document.getElementById("button4").innerHTML = 75;                      
+                            }
+                    
+                            let blok5 = 69; {
+                                document.getElementById('button5').onclick = changeColor2;   
+                                function changeColor2() {
+                                    button5.style.background = "red";
+                                }   
+                                document.getElementById("button5").innerHTML = 69;
+
+                                let btn3 = document.getElementById("vorige");
+                                btn3.onclick = function () {
+                                    document.getElementById("quizMain");
+                                    document.getElementById("div1").innerHTML = "5 + 2";
+                                    div2.textContent = "3/5";                                    
+                                        document.getElementById("button1").innerHTML = 12;  
+                                        document.getElementById("button2").innerHTML = 7;                      
+                                        document.getElementById("button3").innerHTML = 8;                      
+                                        document.getElementById("button4").innerHTML = 13;                      
+                                        document.getElementById("button5").innerHTML = 6;  
+                                }
+                                
+
+                                let btn2 = document.getElementById("volgende");
+                                btn2.onclick = function () {
+                                    document.getElementById("quizMain")
+                                    document.getElementById("div1").innerHTML = "60 : 2";
+                                    document.getElementById("volgende").onclick = changeColor2;
+                                        div2.textContent = "5/5";     
+                                        button1.style.background = "white";
+                                        button2.style.background = "white";
+                                        button3.style.background = "white";
+                                        button4.style.background = "white";
+                                        button5.style.background = "white";
+                                }
+                                        
+                        
+                                        let blok1 = 40; {
+                                            document.getElementById('button1').onclick = changeColor2;   
+                                            function changeColor2() {
+                                                button1.style.background = "red";
+                                            }   
+                                            document.getElementById("button1").innerHTML = 40;                      
+                                        }
+                                    
+                                        let blok2 = 45; {
+                                            document.getElementById('button2').onclick = changeColor2;   
+                                            function changeColor2() {
+                                                button2.style.background = "red";
+                                            }   
+                                            document.getElementById("button2").innerHTML = 45;                      
+                                        }
+                                
+                                        
+                                        let blok3 = 20; {
+                                            document.getElementById('button3').onclick = changeColor2;   
+                                            function changeColor2() {
+                                                button3.style.background = "red";
+                                            }   
+                                            document.getElementById("button3").innerHTML = 20;                      
+                                        }
+                                
+                                       
+                                        let blok4 = 30; {
+                                            document.getElementById('button4').onclick = changeColor2;   
+                                            function changeColor2() {
+                                                button4.style.background = "green";
+                                            }   
+                                            document.getElementById("button4").innerHTML = 30;                      
+                                        }
+                                
+                                        let blok5 = 120; {
+                                            document.getElementById('button5').onclick = changeColor2;   
+                                            function changeColor2() {
+                                                button5.style.background = "red";
+                                            }   
+                                            document.getElementById("button5").innerHTML = 120;
 
 
+                                        let btn3 = document.getElementById("vorige");
+                                        btn3.onclick = function () {
+                                            document.getElementById("quizMain");
+                                            document.getElementById("div1").innerHTML = "50 + 21";
+                                            div2.textContent = "4/5";                                    
+                                                document.getElementById("button1").innerHTML = 60;  
+                                                document.getElementById("button2").innerHTML = 72;                      
+                                                document.getElementById("button3").innerHTML = 71;                      
+                                                document.getElementById("button4").innerHTML = 75;                      
+                                                document.getElementById("button5").innerHTML = 69;  
+                                        }
+
+                                let btn2 = document.getElementById("volgende");
+                                btn2.onclick = function () {
+                                    document.getElementById("quizMain")
+                                    document.getElementById("div1").innerHTML = "Gefeliciteerd";
+                                    // document.getElementById("volgende").onclick = changeColor2;
+                                    //     div2.textContent = "5/5";     
+                                    //     button1.style.background = "white";
+                                    //     button2.style.background = "white";
+                                    //     button3.style.background = "white";
+                                    //     button4.style.background = "white";
+                                    //     button5.style.background = "white";
+                                }
+                                    
+                                      
+
+                            }}}}
+                
+            
+
+
+
+           
 
    
 
