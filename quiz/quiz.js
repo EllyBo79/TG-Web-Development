@@ -64,16 +64,15 @@ button5s.textContent = "5"
 button5s.id = "button5s";
 quizMain.appendChild(button5s);
 
-
 let vorige = document.createElement('button');
 vorige.textContent = "Vorige";
 vorige.id = "vorige";
-document.body.appendChild(vorige);
+quizMain.appendChild(vorige);
 
 let volgende = document.createElement('button');
 volgende.textContent = "Volgende";
 volgende.id = "volgende";
-document.body.appendChild(volgende);
+quizMain.appendChild(volgende);
 
 
 
@@ -81,6 +80,12 @@ let start = document.createElement('button');
 start.textContent = "Start";
 start.id = "start";
 document.body.appendChild(start);
+
+let restart = document.createElement('button');
+restart.textContent = "reStart";
+restart.id = "restart";
+document.body.appendChild(restart);
+
 
 //startknop waardoor je naar de eerste vraag gaat.
 let targetDiv = document.getElementById("quizMain");
@@ -93,10 +98,9 @@ let targetDiv = document.getElementById("quizMain");
       }
     };
 
+
     // Deze moeten allemaal in 1 function komen. Hoe dan?
    // Dit is de eerste vraag
-
-         
 
     let answer1 = 26; {
         document.getElementById('button1').onclick = changeColor;   
@@ -268,7 +272,7 @@ let targetDiv = document.getElementById("quizMain");
                     }   
                     document.getElementById("button5").innerHTML = 6;  
                 
-                    
+                
 
                     // let btn3 = document.getElementById("vorige");
                     // btn3.onclick = function () {
@@ -295,47 +299,49 @@ let targetDiv = document.getElementById("quizMain");
                             button4.style.background = "white";
                             button5.style.background = "white";
                     
+                            
             
-                            let blok1 = 60; {
+                            let blok1 = 30; {
                                 document.getElementById('button1').onclick = changeColor2;   
                                 function changeColor2() {
                                     button1.style.background = "red";
                                 }   
-                                document.getElementById("button1").innerHTML = 60;                      
+                                document.getElementById("button1").innerHTML = 30;                      
                             }
                         
-                            let blok2 = 72; {
+                            let blok2 = 45; {
                                 document.getElementById('button2').onclick = changeColor2;   
                                 function changeColor2() {
                                     button2.style.background = "red";
                                 }   
-                                document.getElementById("button2").innerHTML = 72;                      
+                                document.getElementById("button2").innerHTML = 61;                      
                             }
                     
                             
-                            let blok3 = 71; {
+                            let blok3 = 20; {
                                 document.getElementById('button3').onclick = changeColor2;   
                                 function changeColor2() {
-                                    button3.style.background = "green";
+                                    button3.style.background = "red";
                                 }   
-                                document.getElementById("button3").innerHTML = 71;                      
+                                document.getElementById("button3").innerHTML = 70;                      
                             }
                     
                            
-                            let blok4 = 75; {
+                            let blok4 = 30; {
                                 document.getElementById('button4').onclick = changeColor2;   
                                 function changeColor2() {
-                                    button4.style.background = "red";
+                                    button4.style.background = "green";
                                 }   
-                                document.getElementById("button4").innerHTML = 75;                      
+                                document.getElementById("button4").innerHTML = 71;                      
                             }
                     
-                            let blok5 = 69; {
+                            let blok5 = 120; {
                                 document.getElementById('button5').onclick = changeColor2;   
                                 function changeColor2() {
                                     button5.style.background = "red";
                                 }   
-                                document.getElementById("button5").innerHTML = 69;
+                                document.getElementById("button5").innerHTML = 52;
+                            
                             
 
                                 
@@ -352,7 +358,7 @@ let targetDiv = document.getElementById("quizMain");
                                         button3.style.background = "white";
                                         button4.style.background = "white";
                                         button5.style.background = "white";
-                                }
+                                
                                         
                         
                                         let blok1 = 40; {
@@ -396,7 +402,19 @@ let targetDiv = document.getElementById("quizMain");
                                             }   
                                             document.getElementById("button5").innerHTML = 120;
                                         }
-                                    }}}}}}}}
+                                        
+//met deze knop click ga je naar pagina met text van uitkomst
+    let congratz = document.getElementById("quizMain");
+    let btnLast = document.getElementById("volgende");
+    btnLast.onclick = function () {
+        document.getElementById("quizMain").innerHTML = "Jammer!   Je hebt waarschijnlijk andere kwaliteiten";
+        quizMain.style.background = "white";
+        quizMain.style.fontSize = "30px";
+  
+    };
+
+    
+                                    }}}}}}}}}
 
 
 
