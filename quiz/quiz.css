@@ -6,30 +6,37 @@ body {
 #quizMain{
     position: relative;
     display: block;
-    background-color: rgb(21, 129, 124);
-    height: 600px;
+    /* background-color: rgb(21, 129, 124); */
+    background-color: white;
+    height: 610px;
     width: 400px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 55px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-top: 20px;
 }
+
 h1 {
     display: flex;
-    margin-left: 80px;
+    position: absolute;
+    margin-left: 50px;
+    font-size: 55px;
     }
 
 #div1 {
     position: absolute;
     text-align: center;
-    height: 100px;
-    width:  350px;
+    height: 105px;
+    width:  385px;
     background-color: white;
     border: 2px solid rgb(21, 129, 124);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 100px; */
-    margin-left: 22px;
+    margin-top: 25px;
+    margin-left: 5px;
     font-size: 2.5rem;
 }
 
@@ -39,7 +46,7 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-    margin-top: -30px;
+    margin-top: -10px;
     margin-left: 175px;
 }
 
@@ -50,11 +57,11 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 150px;
     background-color: white;
-    width: 320px;
-    height: 60px;
-    margin-left: 40px;
+    height: 55px;
+    width: 385px;
+    margin-left: 5px;
     border: 1px solid white;
     border-radius: 50px 0px 0px 50px;
     
@@ -71,8 +78,8 @@ h1 {
     width: 70px;
     border: 10px solid rgb(21, 129, 124);
     border-radius: 50%;
-    margin-top: 115px;
-    margin-left: 35px;
+    margin-top: 145px;
+    margin-left: 4px;
 }
 #button2 {
     font-family: indie flower;
@@ -81,11 +88,11 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 190px;
+    margin-top: 220px;
     background-color: white;
-    width: 320px;
-    height: 60px;
-    margin-left: 44px;
+    height: 55px;
+    width: 385px;
+    margin-left: 8px;
     border: 1px solid white;
     border-radius: 0px 50px 50px 0px;
 }
@@ -101,8 +108,8 @@ h1 {
     width: 70px;
     border: 10px solid rgb(21, 129, 124);
     border-radius: 50%;
-    margin-top: 185px;
-    margin-left: 300px;
+    margin-top: 215px;
+    margin-left: 325px;
 }
 #button3 {
     font-family: indie flower;
@@ -111,13 +118,12 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 260px;
+    margin-top: 290px;
     background-color: white;
-    margin-left: 24px;
     border: 1px solid white; 
-    width: 320px;
-    height: 60px;
-    margin-left: 40px;
+    height: 55px;
+    width: 385px;
+    margin-left: 5px;
     border-radius: 50px 0px 0px 50px;
 }
 #button3s {
@@ -132,8 +138,8 @@ h1 {
     width: 70px;
     border: 10px solid rgb(21, 129, 124);
     border-radius: 50%;
-    margin-top: 255px;
-    margin-left: 35px;
+    margin-top: 285px;
+    margin-left: 4px;
 }
 
 #button4 {
@@ -143,11 +149,11 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 330px;
+    margin-top: 360px;
     background-color: white;
-    width: 320px;
-    height: 60px;
-    margin-left: 44px;
+    height: 55px;
+    width: 385px;
+    margin-left: 8px;
     border: 1px solid white;
     border-radius: 0px 50px 50px 0px;
 }
@@ -163,8 +169,8 @@ h1 {
     width: 70px;
     border: 10px solid rgb(21, 129, 124);
     border-radius: 50%;
-    margin-top: 325px;
-    margin-left: 300px;
+    margin-top: 355px;
+    margin-left: 325px;
 }
 #button5 {
     font-family: indie flower;
@@ -173,12 +179,12 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 400px;
+    margin-top: 430px;
     background-color: white;
     border: 1px solid white; 
-    width: 320px;
-    height: 60px;
-    margin-left: 40px;
+    height: 55px;
+    width: 385px;
+    margin-left: 5px;
     border-radius: 50px 0px 0px 50px;
 }
 
@@ -194,8 +200,8 @@ h1 {
     width: 70px;
     border: 10px solid rgb(21, 129, 124);
     border-radius: 50%;
-    margin-top: 395px;
-    margin-left: 35px;
+    margin-top: 425px;
+    margin-left: 4px;
 }
 
 #vorige {
@@ -204,8 +210,8 @@ h1 {
     font-size: 1.3rem;
     font-weight: bold;
     background-color: rgb(3, 184, 184);
-    margin-top: 550px;
-    margin-left:-100px;
+    margin-top: 620px;
+    margin-left:-250px;
     height: 40px;
     border: 1px solid rgb(3, 184, 184) ;
 }
@@ -215,8 +221,8 @@ h1 {
     font-size: 1.3rem;
     font-weight: bold;
     background-color: rgb(3, 184, 184);
-    margin-top: 550px;
-    margin-left:1-50px;
+    margin-top: 620px;
+    margin-left:-160px;
     height: 40px;
     border: 1px solid rgb(3, 184, 184) ;
 }
@@ -227,14 +233,13 @@ h1 {
     font-size: 1.3rem;
     font-weight: bold;
     background-color: rgb(3, 184, 184);
-    margin-top: 10px;
-    margin-left:150px;
+    margin-left:170px;
     margin-right: 5px;
     height: 30px;
     width: 60px;
     border: 1px solid rgb(3, 184, 184) ;
     text-align: center;
-    margin-top: 100px;
+    top: 15px;
 }
 #knop {
     position: absolute;
