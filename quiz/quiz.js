@@ -79,6 +79,7 @@ function sumPlace() {
     volgende.textContent = "Volgende";
     volgende.id = "volgende";
     quizMain.appendChild(volgende);
+
     let answer1; {
         document.getElementById('button1').onclick = changeColor;   
         function changeColor() {
@@ -291,8 +292,7 @@ btn2.onclick = function () {
         button4.style.background = "white";
         button5.style.background = "white";
 
-                                            
-                            
+                                                                        
 let blok1 = 40; {
     document.getElementById('button1').onclick = changeColor2;   
     function changeColor2() {
@@ -309,7 +309,6 @@ let blok2 = 45; {
     document.getElementById("button2").innerHTML = 45;                      
 }
 
-
 let blok3 = 20; {
     document.getElementById('button3').onclick = changeColor2;   
     function changeColor2() {
@@ -317,7 +316,6 @@ let blok3 = 20; {
     }   
     document.getElementById("button3").innerHTML = 20;                      
 }
-
 
 let blok4 = 30; {
     document.getElementById('button4').onclick = changeColor2;   
@@ -333,8 +331,7 @@ let blok5 = 120; {
         button5.style.background = "rgb(243, 49, 49)";
     }   
     document.getElementById("button5").innerHTML = 120;
-}                              
-
+}                       
 
 //met deze knop click ga je naar pagina met text van uitkomst
 let uitslag;  {
@@ -343,10 +340,28 @@ let uitslag;  {
     document.getElementById("quizMain").innerHTML = "Jammer!   Je hebt waarschijnlijk andere kwaliteiten";
     quizMain.style.background = "white";
     quizMain.style.fontSize = "30px";
+    }  
+
+    // let back;  {
+    //     document.getElementById("vorige").onclick = btnBack;
+    //     function btnBack () {
+    //     document.getElementById("quizMain");
+    //     quizMain.style.background = "white";
+    //     quizMain.style.fontSize = "30px";
+    //     }  }
+// let back; {
+//     document.getElementById("vorige").onclick = quizMain;
+//     function quizMain() {
+//         window.history.back();
+//       }}
+   
+
+    
+          
     
 }}}
 
-    } } }}}}}}
+    } } }}}}}
 
 
 
