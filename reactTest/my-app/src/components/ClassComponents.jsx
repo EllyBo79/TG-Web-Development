@@ -1,8 +1,7 @@
-
-// opdracht2
 // import React from 'react'
+import React, { Component } from "react";
 
-
+// opdracht 3 
 // const inputStyle = {
 //   backgroundColor:"pink",
 //   border:"5px solid aqua",
@@ -26,6 +25,7 @@
 //   height:"40px",
 //   color:"grey"
 // }
+
 // class ClassComponents extends React.Component {
 //     constructor(props) {
 //       super(props);
@@ -37,38 +37,93 @@
 //     render() {
 //       return (
 //         <form>
-//           <input type="text" />
-//           <h1>1-Hello Class</h1>
 //           <input style={inputStyle}type='text'onChange={this.changeName}
 //         />
 //         <h1 style={myStyle}>2.Hello Class {this.state.username}</h1>
 //         </form>
 //       );
 //     }
-  // }
+//   }
+// export default  ClassComponents 
+
+// opdracht2 
+// const inputStyle = {
+//   backgroundColor:"pink",
+//   border:"5px solid aqua",
+//   marginLeft: "100px",
+//   paddingLeft:"40px",
+//   fontSize: "20px",
+//   width:"75px",
+//   fontFamily: "lobster",
+//   color:"grey",
+//   marginTop:"40px"
+// }
+// const myStyle = {
+//   backgroundColor:"pink",
+//   border:"5px solid aqua",
+//   marginLeft: "100px",
+//   paddingLeft:"40px",
+//   paddingTop:"10px",
+//   fontSize: "30px",
+//   width:"450px",
+//   fontFamily: "lobster",
+//   height:"40px",
+//   color:"grey"
+// }
+
+// class ClassComponents extends React.Component {
+//     constructor(props) {
+//       super(props);
+//       this.state = { username: '' };
+//     }
+//     changeName = (event) => {
+//       this.setState({username: event.target.value});
+//     }
+//     render() {
+//       return (
+//         <form>
+//           <input style={inputStyle}type='text'onChange={this.changeName}
+//         />
+//         <h1 style={myStyle}>2.Hello Class {this.state.username}</h1>
+//         </form>
+//       );
+//     }
+//   }
 // export default  ClassComponents 
 
 
+
+
   // opdracht1
-  import React, { Component } from 'react'
+  // import React, { Component } from 'react'
   
+  // export default class ClassComponents extends Component {
+  //   render() {
+  //     return (
+  //       <div>
+  //         <h1>2.Hello Class { this.props.text }</h1>
+  //       </div>
+  //     )
+  //   }
+  // }
+  
+  // opdracht 3
   export default class ClassComponents extends Component {
     render() {
       return (
         <div>
-          <h1>2.Hello Class { this.props.name }</h1>
+          <h1>2.Hello Class { this.props.text }</h1>
         </div>
       )
     }
   }
-  
 
 
 
 
 
 
-  
+
 
 // class ClassComponents extends React.Component {
 //     constructor(props) {
