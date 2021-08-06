@@ -15,9 +15,9 @@ body {
   background-position: bottom;
   transition: 0.4 ease-out;
   width: 400px;
-  margin: 75px;
-  border-radius: 20px;
-  border: 8px solid rgb(243, 148, 164);
+  margin: 75px 0px 0px 400px ;
+  border-radius: 30px;
+  border: 10px solid rgb(243, 148, 164);
 }
 .app.Paris {
   background-image: url('./assets/Paris.jpg');
@@ -28,39 +28,41 @@ main {
   padding: 25px;
   border-radius: 20px;
 }
-
-.search-box {
-  width: 100%;
-  margin: 0 0 75px;
+.pictures {
+  font-size: 120px;
 }
-
-.search-box .search-bar {
-  display: block;
-  width: 100%;
-  padding: 15px;
-
-  appearance: none;
-  background: none;
-  border: none;
-  outline-offset: none;
-
-  background-color: rgba(255, 255, 255, 0.5) ;
-  border-radius: 0px 0px 16px 16px;
-  margin-top: -25px;
-
-  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-
-  color: #313131;
+.moreText {
   font-size: 20px;
 }
 
+.icons {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+img {
+  height: 150px;
+  width: 150px;
+}
+
+#changeIcon {
+  color: rgb(217, 225, 240);
+  font-size: 70px;
+}
+
+h1.weather {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .location-box .location {
+  margin-top: 50px;
   color: #fff;
-  font-size: 32px;
+  font-size: 50px;
   font-weight: 500;
   text-align: center;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
-
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .location-box .date {
@@ -80,24 +82,175 @@ main {
   position: relative;
   display: inline-block;
   margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   padding: 15px 25px;
 
   color: #fff;
-  font-size: 80px;
+  font-size: 20px;
   font-weight: 900;
-  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.6);
   text-align: center;
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 
 
 }
 
-.weather-box .weather {
+.weather-box{
   color: #fff;
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5) ;
-
 }
+
+
+
+#myDIV {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(255, 105, 180, 0.281);
+  margin-top: -70px;
+  margin-left: 150px;
+  color: hotpink;
+}
+
+
+
+
+
+#paneel{
+  height: 400px;
+  width: 500px;
+  background-color: pink;
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* 
+* Base
+*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: lightgrey;
+}
+  body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   background: linear-gradient(to bottom, rgba(254,254,254,1) 0%,pink 30%,rgba(219,219,219,1) 160%,rgba(226,226,226,1) 100%); 
+z-index: -2;
+  }
+
+
+/* Basic Accordion Styles */
+.accordion {
+  position: relative;
+  top: 50%;
+  left: 620px;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  box-shadow: 0 1px 8px rgba(hotpink,.25);
+  margin: -360px 0px 0px 400px;
+}
+  
+  /* Radio Inputs */
+input[name='panel'] {
+  display: none;
+}
+
+  /* Labels */
+  label {
+    position: relative;
+    display: block;
+    padding: 1em;
+    background: linear-gradient(to bottom, rgba(254,254,254,1) 0%,pink 20%,rgba(254,254,254,1) 0%,pink 20%);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid rgba(#000,.15);
+    box-shadow: inset 0 2px 0 #fff;
+    font-size: 1.5em;
+    text-shadow: 0 1px 0 rgba(#fff,.75);
+    color: grey;
+    cursor: pointer;
+    transition: all timing ease;
+  }  
+    label:after {
+      content: '+';
+      position: absolute;
+      right: 1em;
+      width: 1em;
+      height: 1em;
+      color: lightgrey;
+      text-align: center;
+      border-radius: 50%;
+      background: rgb(243, 149, 165);
+      box-shadow: inset 0 1px 6px rgba(#000,.5), 0 1px 0 #fff;
+      text-shadow: 0 1px 0 rgba(#000,.75);     
+    }
+    
+    label:hover {
+      color:darkcyan;
+    }
+      
+  
+  
+  input:checked + label {
+    color: hotpink;
+  }
+    input:checked + label:after {
+      content: '-';
+      /* adjsut line-height to vertically center icon */
+      line-height: .8em;
+    }
+    
+  
+  
+  /* Panel Content */
+  .accordion__content {
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    padding: 0 1.5em;
+    box-shadow: inset 4px 0 0 0 pink, inset 0 3px 6px rgba(#000,.75);
+    background: darkgrey;
+    background: linear-gradient(to bottom, rgba(68,68,68,1) 0%,rgba(34,34,34,1) 100%);
+    color: lightgrey;
+    transition: height timing ease;
+  } 
+    .accordion__content:not(:last-of-type) {
+      box-shadow: inset 0 -2px 2px rgba(#000,.25), inset 4px 0 0 0 darkcyan, inset 0 3px 6px rgba(#000,.75);
+    }
+    
+    .accordion__header {
+      padding: 0.5em 0;
+    }
+      
+    .accordion__body {
+      font-size: .825em;
+      line-height: 1.4em;
+    }
+
+/* 
+* Size Variations
+*/
+
+input[name='panel']:checked ~ .accordion__content.accordion__content--small {
+  height: 100px;
+}
+
+/* input[name='panel']:checked ~ .accordion__content.accordion__content--med {
+  height: 200px;
+}
+
+input[name='panel']:checked ~ .accordion__content.accordion__content--large {
+  height: 300px;
+} */

@@ -11,10 +11,14 @@
         .container {
             position: relative;            
         }
-     
+        .con {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
         .con::before {
             position: absolute;
-            content: url(/4_Pseudo\ elements/cat.jpg); 
+            content: url(cat.jpg); 
         }
         
         .text {
@@ -31,14 +35,14 @@
       
     </style>
 
-
     <div class="container">
-        <div class="con"></div>
+        <div class="con">
         <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam minus modi saepe aliquam reprehenderit optio id veritatis debitis corporis deserunt explicabo nam, ad, in ipsa. Quibusdam facere cum quam maxime.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores incidunt sapiente mollitia quisquam. Temporibus omnis fugiat dolore quam facilis corporis vitae impedit animi, in deserunt nemo blanditiis earum obcaecati quisquam.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vero nulla fugit magni reiciendis autem nesciunt quibusdam officia! Reiciendis possimus voluptatum alias, dignissimos hic maiores quibusdam velit quod nemo veritatis.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in, quis labore rem magni voluptates quo accusamus molestiae modi qui id quia optio expedita neque adipisci sapiente veniam ullam rerum.
         </p>
+        </div>
     </div>
    
 </body>

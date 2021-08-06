@@ -1,67 +1,68 @@
-// import ClassComponents from "./components/ClassComponents";
-// import FunctionalComponent from "./components/FunctionalComponent";
 // import React, {Component} from 'react';
 // import React, { useState } from "react";
-// import React, { useState, memo, useEffect } from 'react';
 // import React from 'react';
-import React, { useEffect} from "react";
+import React, { useEffect, useState} from "react";
+import moment from "moment";
+// import NextPage from "./components/NextPage";
+// import Days from "./components/Days";
+// import TempMain from "./components/TempMain"
+// import TextExtra from "./components/TextExtra";
+// import Month from "./components/Month";
+import Mother from "./components/Mother";
+import Clouds from "./components/Clouds";
+import Accordion from "./components/Accordion";
+  
+export default function App() {   
 
-  // const api = {
-  //   key: `http://api.openweathermap.org/data/2.5/weather?q=Amsterdam&appid=5401256b809d2d8020bf0d7e076716e8&units=metric`,
-  //   base: "http://api.openweathermap.org/data/2.5/"
-  // }
 
-
-function App() {
-// const [query, setQuery] = useState('');
-// const [weather, setWeather] = useState({});
+const api_key =  process.env.REACT_APP_KEY_ELLY;
+const [data, setData] = useState();
+console.log(api_key)
+console.log(data)
+console.log(new Date().getDate()+1)
+     
+useEffect(() => {  
+     fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=52.374&lon=4.8897&units=metric&appid=${api_key}`)
+     
+      .then((response) => response.json())
+      .then((newData) =>  setData(newData))
+    }, [api_key]) 
 
   
-useEffect(() => {
-  
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=Amsterdam&appid=5401256b809d2d8020bf0d7e076716e8&units=metric`)
-  .then(response => response.json())
-  .then(data => console.log(data));
-  // return `${data}`;
-}, [])
+    if (!data) {
+      console.log("eerst niks")
+      return null
+    }
+    console.log ("iets");
 
-  const dateBuilder = (d) => {
-    let months = ["January", "February", "March", "April", "May", "June", "July", "August",
-  "September", "October", "November", "December"];
-    let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
-  "sunday"];
-
-  let day = days[d.getDay()];
-  let date = d.getDate();
-  let month = months[d.getMonth()];
-  let year = d.getFullYear();
-  
-  return `${day} ${date} ${month} ${year}`
-  };
-   
+ 
   return (
-    <div className="app">
+<div>
+    <div className="app ">
       <main>
-        <div className="search-box">
-          <input type="text" className="search-bar" placeholder="Search..." />
+        <div className="location-box">                
+          <div className="location">Amsterdam</div>
+          <div className="icons">
+          <Clouds data={data}/>
+          {moment().format("ll")}
+          </div> 
         </div>
-        <div className="location-box">
-          <div className="location">Amsterdam</div> 
-          <div className="date">{dateBuilder(new Date())}</div>         
-        </div>
+        
         <div className="weather-box">
           <div className="temp">
-          {/* <p>Temprature: {main.temp}</p> */}
-              25 °C
-          </div>
-          <div className="weather">Sunny</div>
-        </div>
+          <Mother data={data}/>
+          </div>   
+           <p className="time">{moment().format("h:mm")}</p>
+       </div>
+
       </main>
+
+    </div> 
+    <Accordion data={data}/>    
     </div>
   );
-  }
+};
 
-export default App;
 
 
 
