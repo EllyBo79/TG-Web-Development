@@ -1,0 +1,164 @@
+$backgroundNav: #d9c2a1;
+$backgroundBody: #f4f1e5;
+$lettersBig: #29542e;
+$buttonColor: #fae7cbb2;
+$borderButton:#fae7cb;
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+body {
+    background-color: $backgroundBody;
+    color: $lettersBig;
+    // color: #fae7cb;
+    box-sizing: border-box;
+}
+
+.logoName {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 19px;
+    font-family: 'Rancho', cursive;
+}
+.imageCat {
+    margin: 20px 0px 0px 20px;
+}
+
+nav {
+    ul {
+    text-align: center;
+    margin-left: -60px;
+    }
+    .navList li {
+        display: inline;
+    }
+    .linkStyle {
+        text-decoration: none;
+        padding: 5px 5px;
+        color: $lettersBig;
+        font-size: 22px;
+        font-weight: bolder;
+    }
+}
+      
+div.navBar {
+    position: static;
+    background-color: $backgroundNav;
+    width: 100%;
+    // margin: 0 auto;
+}
+
+///////////////////////////////////////////////////////
+
+
+.clothes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // margin: 50px 150px 0px 150px ;   
+}
+.itemsClothing {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.catPics {
+    height: 400px;
+    width: 350px;
+}
+
+
+
+////////////////////////////////////////////////////
+
+.buttonOne, .buttonTwo, .buttonThree {
+    width: 350px;
+    height: 60px;
+    margin-top: -5px;
+    background-color: $buttonColor;
+    border-color: $backgroundNav;
+    border-style: solid;
+    border-width: 0 2px 2px 2px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover:before {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+button:before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 1.1em; left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: .8em;
+  transform: translate(-100%,0);
+  transition: all .5s ease-in-out;
+}
+  /*button div (button text before hover)*/
+  button:hover div { 
+      transform: translate(100%,0)
+    }
+
+  button div {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    transition: all .3s ease-in-out;
+  }
+
+  .cart {
+    //   position: absolute;
+    //   display: flex;
+      height: 30px;
+      width: 50px;
+      background-color: $lettersBig ;
+      color: $backgroundBody;
+      left: 40px;
+  }
+
+
+
+
+@media only screen and (max-width: 1200px){
+    // .linkStyle{
+    //     font-size: 6vw;
+    // } 
+    // .logoName {
+    //     font-size: 8vw;
+    // }
+    /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+    //  .linkStyle{
+    //     font-size: 6.5vw;
+    // } 
+    // .logoName {
+    //     font-size: 7.5vw;
+    // }
+  
+	/*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+    // .linkStyle{
+    //     font-size: 5.5vw;
+    // }
+    // .logoName {
+    //     font-size: 6.5vw;
+    // }
+	/*Small smartphones [325px -> 425px]*/
+}

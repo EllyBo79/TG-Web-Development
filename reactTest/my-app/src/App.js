@@ -19,7 +19,7 @@ const api_key =  process.env.REACT_APP_KEY_ELLY;
 const [data, setData] = useState();
 console.log(api_key)
 console.log(data)
-console.log(new Date().getDate()+1)
+// console.log(new Date().getDate()+1)
      
 useEffect(() => {  
      fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=52.374&lon=4.8897&units=metric&appid=${api_key}`)
