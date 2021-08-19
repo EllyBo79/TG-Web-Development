@@ -6,18 +6,13 @@ import CatStuff2 from "./pages/CatStuff2";
 import Home from "./pages/Home";
 import Pay from "./components/Pay";
 import React from 'react';
-import Basket from "./components/Basket";
-import data from "./components/data";
-import Main from "./components/Main";
+
 
 function App() {
-  
-  const { products } = data;
 
   return (
     <BrowserRouter>
     <div className="navBar">
-      <Basket/>
       <Header />
     </div> 
 
@@ -28,7 +23,6 @@ function App() {
       <Route path="/Pay" component={Pay}/>
     </Switch>
     
-    <Main products={products}></Main>
     
     </BrowserRouter>
     

@@ -10,7 +10,6 @@ body {
     background-color: $backgroundBody;
     color: $lettersBig;
     // color: #fae7cb;
-    box-sizing: border-box;
 }
 
 .logoName {
@@ -26,18 +25,19 @@ body {
 
 nav {
     ul {
-    text-align: center;
-    margin-left: -60px;
+    text-align: right;
+    margin-top: -40px;
     }
     .navList li {
         display: inline;
     }
     .linkStyle {
         text-decoration: none;
-        padding: 5px 5px;
+        padding: 15px 15px;
         color: $lettersBig;
-        font-size: 22px;
+        font-size: 35px;
         font-weight: bolder;
+        font-family: 'Rancho', cursive;
     }
 }
       
@@ -45,58 +45,54 @@ div.navBar {
     position: static;
     background-color: $backgroundNav;
     width: 100%;
+    height: 170px;
     // margin: 0 auto;
 }
 
 ///////////////////////////////////////////////////////
 
+.buttonPlace {
+    position: absolute;
+    z-index: 1;
 
-.clothes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    // margin: 50px 150px 0px 150px ;   
 }
-.itemsClothing {
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
+
 .catPics {
     height: 400px;
     width: 350px;
+    margin: 50px 60px 0px 60px;
 }
 
 
 
 ////////////////////////////////////////////////////
 
-.buttonOne, .buttonTwo, .buttonThree {
+.buttonsImage  {
     width: 350px;
     height: 60px;
-    margin-top: -5px;
     background-color: $buttonColor;
     border-color: $backgroundNav;
     border-style: solid;
     border-width: 0 2px 2px 2px;
+    margin-left: -410px;
+    top: 350px;
 }
 
-button:hover {
+.buttonsImage:hover {
     cursor: pointer;
 }
 
-button {
+.buttonsImage {
   position: relative;
   overflow: hidden;
 }
 
-button:hover:before {
+.buttonsImage:hover:before {
     opacity: 1;
     transform: translate(0,0);
 }
 
-button:before {
+.buttonsImage:before {
   content: attr(data-hover);
   position: absolute;
   top: 1.1em; left: 0;
@@ -109,11 +105,11 @@ button:before {
   transition: all .5s ease-in-out;
 }
   /*button div (button text before hover)*/
-  button:hover div { 
+  .buttonsImage:hover div { 
       transform: translate(100%,0)
     }
 
-  button div {
+    .buttonsImage div {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 800;
@@ -130,7 +126,36 @@ button:before {
       color: $backgroundBody;
       left: 40px;
   }
-
+  button.add {
+    background-color: $backgroundNav;
+    width: 1.5rem;
+  }
+  button.remove {
+    background-color: $backgroundNav;
+    width: 1.5rem;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .col-1 {
+    flex: 1;
+  }
+  .col-2 {
+    flex: 1;
+  }
+  .block {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: right;
+    width: 400px;
+    margin-left: 1070px;
+  }
 
 
 

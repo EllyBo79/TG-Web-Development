@@ -1,13 +1,5 @@
-// import React, {Component} from 'react';
-// import React, { useState } from "react";
-// import React from 'react';
 import React, { useEffect, useState} from "react";
 import moment from "moment";
-// import NextPage from "./components/NextPage";
-// import Days from "./components/Days";
-// import TempMain from "./components/TempMain"
-// import TextExtra from "./components/TextExtra";
-// import Month from "./components/Month";
 import Mother from "./components/Mother";
 import Clouds from "./components/Clouds";
 import Accordion from "./components/Accordion";

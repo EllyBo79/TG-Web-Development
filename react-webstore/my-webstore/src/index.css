@@ -2,8 +2,6 @@
 body {
   background-color: #f4f1e5;
   color: #29542e;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .logoName {
@@ -25,8 +23,8 @@ body {
 }
 
 nav ul {
-  text-align: center;
-  margin-left: -60px;
+  text-align: right;
+  margin-top: -40px;
 }
 
 nav .navList li {
@@ -35,78 +33,58 @@ nav .navList li {
 
 nav .linkStyle {
   text-decoration: none;
-  padding: 5px 5px;
+  padding: 15px 15px;
   color: #29542e;
-  font-size: 22px;
+  font-size: 35px;
   font-weight: bolder;
+  font-family: 'Rancho', cursive;
 }
 
 div.navBar {
   position: static;
   background-color: #d9c2a1;
   width: 100%;
+  height: 170px;
 }
 
-.clothes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.itemsClothing {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.buttonPlace {
+  position: absolute;
+  z-index: 1;
 }
 
 .catPics {
   height: 400px;
   width: 350px;
+  margin: 50px 60px 0px 60px;
 }
 
-.buttonOne, .buttonTwo, .buttonThree {
+.buttonsImage {
   width: 350px;
   height: 60px;
-  margin-top: -5px;
   background-color: #fae7cbb2;
   border-color: #d9c2a1;
   border-style: solid;
   border-width: 0 2px 2px 2px;
+  margin-left: -410px;
+  top: 350px;
 }
 
-button:hover {
+.buttonsImage:hover {
   cursor: pointer;
 }
 
-button {
+.buttonsImage {
   position: relative;
   overflow: hidden;
 }
 
-button:hover:before {
+.buttonsImage:hover:before {
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 
-button:before {
+.buttonsImage:before {
   content: attr(data-hover);
   position: absolute;
   top: 1.1em;
@@ -123,12 +101,12 @@ button:before {
 }
 
 /*button div (button text before hover)*/
-button:hover div {
+.buttonsImage:hover div {
   -webkit-transform: translate(100%, 0);
           transform: translate(100%, 0);
 }
 
-button div {
+.buttonsImage div {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 800;
@@ -143,6 +121,51 @@ button div {
   background-color: #29542e;
   color: #f4f1e5;
   left: 40px;
+}
+
+button.add {
+  background-color: #d9c2a1;
+  width: 1.5rem;
+}
+
+button.remove {
+  background-color: #d9c2a1;
+  width: 1.5rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.col-2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.block {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: right;
+  width: 400px;
+  margin-left: 1070px;
 }
 
 @media only screen and (max-width: 1200px) {

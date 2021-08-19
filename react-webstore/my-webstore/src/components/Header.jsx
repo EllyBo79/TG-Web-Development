@@ -16,18 +16,22 @@ const Header = () => {
                         <Link className="linkStyle" to="/">Home</Link>
                     </li>
                     <li>
-                        <Link className="linkStyle" to="/CatStuff1">Cat Couture</Link>
+                        <Link className="linkStyle" to="/CatStuff1">CatCouture</Link>
                     </li>
                     <li>
-                        <Link className="linkStyle" to="/CatStuff2">CatStuff 2</Link>
+                        <Link className="linkStyle" to="/CatStuff2">ScratchMe</Link>
                     </li>
                     <li>
                         <Link className="linkStyle" to="/Pay">Pay</Link>
+                        <a href="#/cart">Cart</a>
+
                     </li>
-                    <button className="cart">Cart</button>
+                    <div>
+                    {/* <button className="cart">Cart</button> */}
+                    </div>
+                    
                 </ul>
             </nav>
-            <a href="#/cart">Cart</a>
         </nav>
     )
 }
